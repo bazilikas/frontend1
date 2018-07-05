@@ -10,7 +10,7 @@
 		<li>Item 5</li>
     </ul>
     
-<p>Work approuch:</p>
+<p>Work approach:</p>
 
 	    <ul type="disc">
         <li>Item 1</li>
