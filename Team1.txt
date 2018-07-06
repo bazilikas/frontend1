@@ -15,7 +15,7 @@
     <ol start=1>
 	<li>Set clear roles</li>
 	<li>Support each other and that will lead us to greater challenges and success</li>
-	<li>Feel responsibility for a whole team, not only for yourself.  (if you can't do somethig – inform others or do not hesidate to ask help)</li>
+	<li>Feel responsibility for a whole team, not only for yourself. (if you can't do something – inform others or do not hesitate to ask help)</li>
 	<li>Item 4</li>
 	<li>Item 5</li>
     </ul>
