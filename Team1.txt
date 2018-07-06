@@ -1,6 +1,6 @@
 <html>
 
-<p>Goals:</p>
+<p>Values:</p>
 
     <ul type="square">  <! bullets type could be: Square, Disc, Circle>
         <li>Item 1</li>
