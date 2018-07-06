@@ -1,21 +1,23 @@
 <html>
 
-<p>Values:</p>
+<p>5 GOALS:</p>
 
-    <ul type="square">  <! bullets type could be: Square, Disc, Circle>
+    <ol start=1>
         <li>More initiative and make it fun</li>
-        <li>Item 2</li>
+        <li>Create something of our own individually and like a team</li>
         <li>Item 3</li>
-		<li>Item 4</li>
-		<li>Item 5</li>
+	<li>Item 4</li>
+	<li>Item 5</li>
     </ul>
     
-<p>Work approach:</p>
+<p>5 DIFFERENT APPROACH OF WORK:</p>
 
-	    <ul type="disc">
-        <li>Set clear roles</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
+    <ol start=1>
+	<li>Set clear roles</li>
+	<li>Support each other and that will lead us to greater challenges and success</li>
+	<li>Item 3</li>
+	<li>Item 4</li>
+	<li>Item 5</li>
     </ul>
 
 
