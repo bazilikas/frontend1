@@ -1,6 +1,6 @@
 <html>
 
-<p>5 GOALS:</p>
+<p>5 VALUES:</p>
 
     <ol start=1>
         <li>More initiative and make it fun</li>
