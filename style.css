@@ -1,1 +1,42 @@
 /* CSS */
+.header-wrapper{
+	height: 50px;
+  background-color: #000080;
+  display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	}
+header{
+  width: 100%;
+  margin: 0 auto;
+  }
+nav{
+  margin-right: 20px;
+  }
+header img{
+  height: 40px;
+  margin: 5px;
+}
+nav ul {
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000080;
+}	
+nav li{
+	float: left;
+}
+nav a{
+	display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav li a:hover {
+	background-color: #4682B4
+}
+nav li a: active {
+   background-color: #3CB371;
+}
