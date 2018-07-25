@@ -1,110 +1,103 @@
-/* CSS */
 .header-wrapper{
-  height: 50px;
-  background-color: #000080;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:space-around;
-}
-header{
-  width: 100%;
-  margin: 0 auto;
- }
-nav{
-  margin-right: 20px;
- }
-header img{
-  height: 40px;
-  margin: 5px;
-}
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #000080;
-}	
-nav li{
-  float: left;
-}
-nav a{
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-nav li a:hover {
-  background-color: #4682B4
-}
-nav li a: active {
-   background-color: #3CB371;
-}
-
-
-
-
-.container{
+	height: 50px;
+	background-color: #000080;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+  }
+  header{
+	width: 100%;
+	margin: 0 auto;
+   }
+  nav{
+	margin-right: 20px;
+   }
+  header img{
+	height: 40px;
+	margin: 5px;
+  }
+  nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #000080;
+  }	
+  nav li{
+	float: left;
+  }
+  nav a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  nav li a:hover {
+	background-color: #4682B4
+  }
+  nav li a:active {
+	 background-color: #3CB371;
+  }
+  
+  /* ********************************* */
+  
+  
+  .container{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-}
-
-section{
+  }
+  
+  section{
 	max-width: 30%;
 	min-width: 300px;
 	background-color: rgba(107,210,219, 0.3);
-  padding: 10px;
-  margin: 5px;
-	margin: 0 auto;
-	margin-top: 0;
-}
-
-h2{
-	text-align: center;
-}
-
-.aboutkids, .aboutteachers, .aboutvolunteers{
-	font-family: 'Paytone One', sans-serif;
-	border-radius: 10%;
-	background-color: #ffbe4f;
-	color: #0c457d;
-	font-size: 1em;
 	padding: 15px;
-	text-align: center;
-}
-
-.text{
-	background-color: rgba(255,190,79);
-	font-family: 'Patrick Hand', cursive;
-	font-weight: bolder;
-	color: black;
-	padding: 10px;
-	padding-left: 15px;
-	border-radius: 5%;
-
-}
-
-
+	/* margin: 0 auto; */
+	
+  }
+  
+  h2{
+	  text-align: center;
+  }
+  
+  .aboutkids, .aboutteachers, .aboutvolunteers{
+	  font-family: 'Paytone One', sans-serif;
+	  border-radius: 10%;
+	  background-color: #ffbe4f;
+	  color: #0c457d;
+	  font-size: 1em;
+	  padding: 15px;
+	  text-align: center;
+  }
+  
+  .text{
+	  background-color: rgba(255,190,79);
+	  font-family: 'Patrick Hand', cursive;
+	  font-weight: bolder;
+	  color: black;
+	  padding: 10px;
+	  padding-left: 15px;
+	  border-radius: 5%;
+    }
+  
+  
 @media only screen and (max-width: 600px) {
-
-	section{
+  
+section{
 	max-width: 30%;
 	min-width: 300px;
-  padding: 10px;
-  margin: 5px;
-  align-items: center;
+	padding: 10px;
+	margin: 5px;
+	align-items: center;
 	margin: 0 auto;
 	margin-top: 10px;
 }
-
-
+  
+  
 section:first-child{
-	margin-top: 0;
+margin-top: 0;
 }
 
 }
-
-
-
-
