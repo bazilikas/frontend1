@@ -1,36 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+html, body {
+	height: 100%;
+ }
+
+body {
+	margin: 0px;
+  	padding: 0px;
+  	background: white;
+  	font-family: 'Raleway', sans-serif;
+  	font-size: 12pt;
+  	color: black;
+}
+
 header{
 	width: 100%;
 	margin: 0 auto;
-   }
+}
 
 .header-wrapper{
-	height: 50px;
 	background-color: #00A987;
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:space-around;
-  }
-  
-  nav{
+}
+
+	/* ============MENIU================ */  
+ nav{
 	margin-right: 20px;
-   }
-  header img{
+ }
+ 
+header img{
 	height: 40px;
 	margin: 5px;
   }
-  nav ul {
+ 
+nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #00A987;
-  }	
-  nav li{
-	float: left;
-	font-family: 'Raleway', sans-serif;
+	background-color: #0c457d;
   }
+
+
+nav li{
+	float: left;
+ }
+
 nav a{
 	display: block;
 	color: white;
@@ -38,11 +55,13 @@ nav a{
 	padding: 16px 16px;
 	text-decoration: none;
 }
+
 nav li a:hover {
-	background-color: #4682B4
+	background-color: #0288d1;
 }
+
 nav li a:active {
-	background-color: #3CB371;
+	background-color: #3CB371; /*keisti spalva*/
 }
   
 	/* ============SLIDER================ */
@@ -116,7 +135,7 @@ nav li a:active {
 
 .aboutblock{
 	padding: 200px;
-	background-color:  #25AAE1; /*#F37000 oranzine*/
+	background-color:  #e1f5fe; /*#F37000 oranzine*/
 	text-align: center;
 	font-size: 50px;
 
@@ -135,33 +154,44 @@ nav li a:active {
 section{
 	max-width: 30%;
 	min-width: 300px;
-	background-color: rgba(107,210,219, 0.3);
+	background-color: white;
 	padding: 15px;
 	/* margin: 0 auto; */
 }
   
-h2{
+section img {
+	display: block;
+	padding: 10px;
+	margin: 0px auto;	
+}  
+section h2{
 	text-align: center;
 }
+section a {
+	display:block;
+	text-align:center;
+	 background-color:#0c457d;
+	 color: white;
+	 padding: 10px;
+	 margin:0px auto;
+	 font-weight: bold;	
+	 text-decoration: none;
+} 
+
+section a:hover	{
+	text-decoration: none;
+}
   
-.aboutkids, .aboutteachers, .aboutvolunteers{
-	font-family: 'Paytone One', sans-serif;
-	border-radius: 10%;
-	background-color: #ffbe4f;
+.about{
 	color: #0c457d;
 	font-size: 1em;
-	padding: 15px;
+	padding: 10px;
 	text-align: center;
 }
   
 .text{
-	background-color: rgba(255,190,79);
-	font-family: 'Patrick Hand', cursive;
-	font-weight: bolder;
-	color: black;
 	padding: 10px;
-	padding-left: 15px;
-	border-radius: 5%;
+	text-align:justify;
 }
 /* ==========PARENT FEEDBACKS=============== */	
 .parentfeedbacks{
@@ -182,7 +212,7 @@ footer{
 	color: white;
 	padding: 10px;
 	font-size: 12px;
-	background-color: #00A987;
+	background-color: #0c457d;
 }
 
 .three-columns{
