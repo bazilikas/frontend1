@@ -147,10 +147,11 @@ nav li a:active {
 .container{
 	display: flex;
 	flex-wrap: wrap;
+	/* align-items: stretch; */
 	justify-content: space-around; /*man su space around graziau atrodo, kai viena slieka lygiuoja centre*/
 	
 }
-  
+ 
 section{
 	max-width: 30%;
 	min-width: 300px;
@@ -160,9 +161,9 @@ section{
 }
   
 section img {
-	display: block;
-	padding: 10px;
-	margin: 0px auto;	
+	/* display: block; */
+	/* padding: 10px; */
+	/* margin: 0px auto;	 */
 }  
 section h2{
 	text-align: center;
@@ -185,7 +186,7 @@ section a:hover	{
 .about{
 	color: #0c457d;
 	font-size: 1em;
-	padding: 10px;
+	/* padding: 10px; */
 	text-align: center;
 }
   
@@ -252,22 +253,22 @@ a>img{
 
 
 
-  
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   
 section{
-	max-width: 30%;
-	min-width: 300px;
-	padding: 10px;
-	margin: 5px;
-	align-items: center;
-	margin: 0 auto;
-	margin-top: 10px;
+	/* max-width: 30%; */
+	/* min-width: 300px; */
+	/* padding: 10px;
+	margin: 5px; */
+	/* align-items: center; */
+	/* margin: 0 auto; */
+	padding: 5px;
+	justify-content: center;
+	/* margin-top: 10px; */
 }
   
   
 section:first-child{
 margin-top: 0;
 }
-
-} */
+} 
