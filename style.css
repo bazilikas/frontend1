@@ -107,7 +107,7 @@ nav a:active {
   width: 100%;
   position: relative;
   margin: auto;
-  background-color:blue;
+  /* background-color:blue; */
 }
 
 /* Hide the images by default */
@@ -228,16 +228,102 @@ section a:hover	{
 	padding: 10px;
 	text-align:justify;
 }
+
+
+
+
 /* ==========PARENT FEEDBACKS=============== */	
+
 .parentfeedbacks{
-	padding: 200px;
+	
+	padding: 50px;
 	background-color: #C44242;; /*#F37000 oranzine*/
-	text-align: center;
-	font-size: 50px;
+
 }
 	
 
+.parent-title{
+	text-align: center;
+	font-size: 50px;
+	padding-bottom: 50px;
+	color: white;
 
+}
+
+	
+blockquote, q {
+	quotes: none; 
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	  content: '';
+	  content: none; 
+}
+
+blockquote {
+	border-left: solid 0.5rem;
+	font-style: italic;
+	margin: 0 0 2rem 0;
+	padding: 1rem 0 1rem 2rem; 
+}
+
+blockquote {
+	border-left-color: rgba(0, 0, 0, 0.25); }
+
+
+.testimonials {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.testimonials > section{
+	margin: 0 auto;
+	justify-content: space-around;
+}
+	
+.testimonials > * {
+	width: 33.3333333333%; }
+.testimonials > * {
+	width: calc(33.3333333333% + 1rem); 
+}
+
+.testimonials .content {
+	/* border-radius: 4px; */
+	height: 100%;
+	padding: 1rem; 
+}
+.testimonials .content .author {
+	display: flex;
+	align-items: center; 
+}
+.testimonials .content .author blockquote {
+	margin: 0; 
+}
+.testimonials .content .author .image {
+/* margin-right: 1rem; */
+	width: 20%; 
+}
+.testimonials .content .author .image img {
+	border-radius: 100%;
+	max-width: 100%; 
+}
+.testimonials .content .credit {
+	font-size: 0.7rem; }
+
+.testimonials .content {
+/* background:  #0288d1; */
+	box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025); 
+}
+
+.testimonials .content .credit strong {
+	color: #0c457d;
+}
+
+.credit{
+	padding-left: 0.5rem;
+}
 
 
 
@@ -252,7 +338,7 @@ footer{
 
 .three-columns{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 }
 
@@ -267,9 +353,19 @@ a>img{
 }
 
 .contacts{
-	justify-content: center;
+	justify-content: stretch;
 	text-align: center;
 	padding-left: 25px;
+	padding-left: 100px;
+}
+
+.social{
+	justify-items: center;
+	padding-left: 200px;
+}
+
+.copy{
+	padding-left: 160px;
 }
 
 .goup{
@@ -304,4 +400,5 @@ section{
   
 section:first-child{
 margin-top: 0;
+}
 }
