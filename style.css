@@ -230,6 +230,41 @@ section a:hover	{
 }
 
 
+/* ==========LECTORS=============== */	
+
+.lectors-wrapper{
+	padding:50px;
+	background-color: #0c457d;
+}
+
+.lectors{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.lectsection{
+	background-image: url("images/blueabstractbg.jpg");
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.lectsection > img{
+	width: 100%;
+}
+
+.lectinfo > h3, .aboutlector{
+	color: white;
+}
+
+.lectinfo{
+	background-color: rgba(12, 69, 125, 0.8);
+	width: 100%;
+	text-align: center;
+	padding: 5px;
+	margin-top: 15px;
+}
 
 
 /* ==========PARENT FEEDBACKS=============== */	
