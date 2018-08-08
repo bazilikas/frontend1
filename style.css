@@ -1,439 +1,262 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="utf-8">
+		<title>Group project</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="normalize.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" type="text/css" href="about.html"/>
+		
+	</head>
 
-html, body {
-	height: 100%;
- }
+		
+<body>
 
-body {
-	margin: 0px;
-  	padding: 0px;
-  	background: white;
-  	font-family: 'Raleway', sans-serif;
-  	font-size: 12pt;
-  	color: black;
-}
+	<header >
+		<div class="header-wrapper">
+		
+			<img src="http://www.edumsia.my/sites/default/files/styles/inner_cover/public/article/cover/Logo_C%40S_800px.png?itok=vz1K2YG0" alt="Logo">
+			<nav>
+			<a href="#hello"><span class="hello">Home</span></a>
+			<div class="dropdown">
+				<button class="dropbtn"><a href="about.html">About</a></button>
+					<div class="dropdown-content">
+						<a href="about.html#mission">Mission</a>
+						<a href="about.html#goals">Goals</a>
+						<a href="about.html#values">Values</a>
+						<a href="about.html#history">History</a>
+						<a href="about.html#safety">Safety & Protection</a>
+						<a href="about.html#results">Results</a>
+					</div>
+				</div>
+			<div class="dropdown">
+				<button class="dropbtn">Program</button>
+					<div class="dropdown-content">
+						<a href="#">Schedule</a>
+						<a href="#">Lecturers</a>
+						<a href="#">Educational & Activity areas</a>
+					</div>
+			</div>	
+			<div class="dropdown">
+				<button class="dropbtn">Registration</button>
+					<div class="dropdown-content">
+						<a href="#">Parents</a>
+						<a href="#">Lectors</a>
+						<a href="#">Volunteers</a>
+						<a href="#">Sponsors</a>
+					</div>
+			</div>		
+			<div class="dropdown">
+				<button class="dropbtn" onclick="location.href='info.html'">Information</button>
+					<div class="dropdown-content">
+						<a href="#">Place location</a>
+						<a href="#">Food</a>
+						<a href="#">Transportation</a>
+						<a href="#">Pricing</a>
+						<a href="#">FAQ</a>
+					</div>
+			</div>
+			<a href ="#contacts">Sponsors</a>			
+			<a href ="#about">Blog</a>
+			<a href = "#services">Contacts</a>
+		</nav>
+	    </div>
+	</header> 
 
-header{
-	width: 100%;
-	margin: 0 auto;
-}
+  <!--====================SLIDES====================-->
 
-.header-wrapper{
-	background-color: #00A987;
-	display:flex;
-	flex-wrap:wrap;
-	justify-content:space-around;
-}
+  <!-- Slideshow container -->
 
-	/* ============MENIU================ */  
+<div class="slideshow-container">
 
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
+	<!-- Full-width images with number and caption text -->
+	<div class="mySlides fade">
+	<div class="numbertext">1 / 3</div>
+	<img src="images/slider1.jpg" style="width:100%" alt="klaida"/>
+	<div class="textslides"><span>Play and learn to code!</span></div>
+	</div>
 
-.dropdown .dropbtn {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 16px 16px;
-    background-color: #0c457d;
-    margin: 0;
-}
-   
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #0288d1;
-    min-width: 160px;
-    z-index: 1;
-}
+	<div class="mySlides fade">
+	<div class="numbertext">2 / 3</div>
+	<img src="images/slider2.jpg" style="width:100%"alt="klaida"/>
+	<div class="textslides"><span>Have fun and learn</span>></div>
+	</div>
 
-.dropdown-content a {
-    float: none;
-    color: white;
-    padding: 16px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
+	<div class="mySlides fade">
+	<div class="numbertext">3 / 3</div>
+	<img src="images/slider3.jpg" style="width:100%" alt="klaida"/>
+	<div class="textslides"><span>Meet new friends!</span></div>
+	</div>
 
-.dropdown-content a:hover {
-    background-color: #e1f5fe;
-    color: #0c457d;
-}
+</div>
 
-.dropdown:hover .dropdown-content {
-   display: block;
-}
-  
- nav{
-   display: flex;
-   align-items: center;
-   margin-right: 20px;
-   overflow: hidden;
-   background-color: #0c457d;
-}
-
- header img{
-   height: 40px;
-   margin: 5px;
-  }
+  <!--=========================ABOUT========================-->
+<div class="aboutblock">
     
-nav a{
-   float:right;
-   display: block;
-   color: white;
-   text-align: center;
-   padding: 16px 16px;
-   text-decoration: none;
-}
+        <h3>Make Something Extraordinary This Summer!</h3>
 
-nav a:hover, .dropdown:hover .dropbtn {
-   background-color: #0288d1;
-}
+		<p>Learn about coding, design, being a maker, science projects, play with virtual reality and so many amazing opportunities to be a creator!</p>
+		<p>At Code Camp Kids don't just learn to code. They code to learn.</p>	
+		
+</div>
 
-nav a:active {
-   background-color: #3CB371;
-}
-  
-	/* ============SLIDER================ */
-
-  * {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  width: 100%;
-  position: relative;
-  margin: auto;
-  /* background-color:blue; */
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-}
-
-
-/* Caption text */
-.textslides {
-	color: #f2f2f2;
-	font-size: 3vw;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 2%;
-  width: 100%;
-  text-align: center;
-}
-.textslides span{
-	background-color: rgba(192, 3, 3, 0.473);
-	padding: 10px;
-	border-radius: 20px;
-
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
- /* ==========ABOUT=============== */
-
-.aboutblock{
-	padding: 200px;
-	background-color:  #e1f5fe; /*#F37000 oranzine*/
-	text-align: center;
-	font-size: 50px;
-
-	
-}
-
-
-   /* ==========KIDS TEACHERS VOLUNTIEERS=============== */
-.container{
-	display: flex;
-	flex-wrap: wrap;
-	/* align-items: stretch; */
-	justify-content: space-around; /*man su space around graziau atrodo, kai viena slieka lygiuoja centre*/
-	
-}
  
-section{
-	max-width: 30%;
-	min-width: 300px;
-	background-color: white;
-	padding: 15px;
-	/* margin: 0 auto; */
-}
-  
-section img {
-	/* display: block; */
-	/* padding: 10px; */
-	/* margin: 0px auto;	 */
-}  
-section h2{
-	text-align: center;
-}
-section a {
-	display:block;
-	text-align:center;
-	 background-color:#0c457d;
-	 color: white;
-	 padding: 10px;
-	 margin:0px auto;
-	 font-weight: bold;	
-	 text-decoration: none;
-} 
+  <!--==========KIDS TEACHERS VOLUNTIEERS===============-->
+ 
+	<div class="container">
+   	   <section>
+	       <div class="about">
+	        	<h2>FOR KIDS</h2>
+		  		<img src="images/1.jpg" alt="For kids"/>
+		  		<div class="text">
+		    	 <p>Hey, kid! Wanna do something Cool? Wanna do some Code? Our teachers made it fun and easy to learn coding skills. 3-4 days of creativity, design, fun and coding. Our most popular Code Camp where every child starts their journey and builds their very own downloadable app! Join us!</p>
+		   		</div>
+		 		<a href="#">REGISTRATION FOR KIDS</a>	
+			</div>     
+	   </section>
 
-section a:hover	{
-	text-decoration: none;
-}
-  
-.about{
-	color: #0c457d;
-	font-size: 1em;
-	/* padding: 10px; */
-	text-align: center;
-}
-  
-.text{
-	padding: 10px;
-	text-align:justify;
-}
-
-
-/* ==========LECTORS=============== */	
-
-.lectors-wrapper{
-	padding:50px;
-	background-color: #0c457d;
-}
-
-.lectors{
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
-.lectsection{
-	background-image: url("images/blueabstractbg.jpg");
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.lectsection > img{
-	width: 100%;
-}
-
-.lectinfo > h3, .aboutlector{
-	color: white;
-}
-
-.lectinfo{
-	background-color: rgba(12, 69, 125, 0.8);
-	width: 100%;
-	text-align: center;
-	padding: 5px;
-	margin-top: 15px;
-}
-
-
-/* ==========PARENT FEEDBACKS=============== */	
-
-.parentfeedbacks{
+  	   <section>
+			<div class="about">
+		   		<h2>FOR TEACHERS</h2>
+		   		<img src="images/2.jpg" alt="For teachers"/>
+		   		<div class="text">
+		     	<p>We know the right instructor changes everything. Our staff empowers students with the most in-demand tech skills, while bringing our renowned camp culture to life. Our selective hiring practices, honed over 20 seasons, yield the most highly qualified, passionate instructors from tech companies, and universities.</p>
+		    	</div>
+		   		<a href="#">REGISTRATION FOR LECTORS</a>	
+			</div>		
+		</section>
+		 
+  	   	<section>
+            <div class="about">
+		    	<h2>FOR VOLUNTEERS</h2>
+		    	<img src="images/3.jpeg" alt="For volunteers"/>  
+		    	<div class="text">
+		    	<p> We need your help and experience to continue to change the lives of the youth in our community. These part-time, unpaid intern ships offer flexible hours, mentoring, and potential succession into paid positions. There are many skills at several levels of commitment needed immediately. </p>
+		     	</div>	
+		     	<a href="#">REGISTRATION FOR VOLUNTEERS</a>
+  		 	</div>
+	   </section>     
+	</div>
+	<!-- End of container -->
 	
-	padding: 50px;
-	background-color: #C44242;; /*#F37000 oranzine*/
+<!--=========================LECTORS========================-->
 
-}
+	<div class="lectors-wrapper">
+		<div class="parent-title"> LECTORS </div>
+		<div class="lectors">
+			<section class="lectsection">
+				<img src="images/lector1.jpg" alt="John Smith"/>
+				<div class="lectinfo">
+				<h3>Gerrard Tolliday</h3>
+				<p class="aboutlector"> there's some info about the lector bla bla bla, he did amazing job at Richmond university, they looked hopeless before his lectures, now they're top tier programmers<p>
+				</div>
+			</section>
+			<section class="lectsection">
+				<img src="images/lector2.jpg" alt="John Smith"/>
+				<div class="lectinfo">
+				<h3>Sandy Bernston</h3>
+				<p class="aboutlector"> there's some info about the lector bla bla bla, she did amazing job at Duke university, they looked hopeless before her lectures, now they're top tier programmers<p>
+				</div>
+			</section>
+			<section class="lectsection">
+				<img src="images/lector3.jpg" alt="John Smith"/>
+				<div class="lectinfo">
+				<h3>Abraham Sawtell</h3>
+				<p class="aboutlector"> there's some info about the lector bla bla bla, he did amazing job at University Kentucky, they looked hopeless before his lectures, now they're top tier programmers<p>
+				</div>
+			</section>
+		</div>
+	</div>
 	
+<!--=========================PARENT FEEDBACKS========================-->
 
-.parent-title{
-	text-align: center;
-	font-size: 50px;
-	padding-bottom: 50px;
-	color: white;
+<div class="parentfeedbacks">
+    <div class="parent-title">
+        PARENT FEEDBACKS
+    </div>
+    
 
-}
+    <div class="testimonials">
+        <section>
+            <div class="content">
+                <blockquote>
+                    <p>"This was my son's first experience of Code Camp and I found it to be professional and calmly organised from the start. He returned full of confidence and had clearly enjoyed all the activities!"</p>
+                </blockquote>
+                <div class="author">
+                    <div class="image">
+                        <img src="images/pic01.jpg" alt="" />
+                    </div>
+                    <p class="credit">- <strong>Danielle Dodder -</strong> <span>Spain</span></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="content">
+                <blockquote>
+                    <p>“I've learned that this isn’t just playing a game. Code Camp really allows a child’s creativity to come through, which I think is phenomenal.”</p>
+                </blockquote>
+                <div class="author">
+                    <div class="image">
+                        <img src="images/pic03.jpg" alt="" />
+                    </div>
+                    <p class="credit">- <strong>John Doe - </strong> <span>Ireland</span></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="content">
+                <blockquote>
+                    <p>"My daughter loved the experience and made great friends!! Already talking about next year!!!”</p>
+                </blockquote>
+                <div class="author">
+                    <div class="image">
+                        <img src="images/pic02.jpg" alt="" />
+                    </div>
+                    <p class="credit">- <strong> Astrid Ansorge - </strong> <span>Germany</span></p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
 
+
+
+</div>
+<!--=============FOOTER==============-->
+
+	<footer>
+		<div class="three-columns">
+
+			<div class="contacts">
+					CONTACTS<br>
+					+37065085000<br>
+					Coding Schools Limited<br>
+					Suite 207, 80 Banana Street<br>
+					Woolloomooloo 2018, Australia<br>					
+			</div>
+
+			<div class="social"> 
+				<div class="soc" span title="Facebook"><a href="#"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-512.png"></a>
+				</div>
+				<div class="soc" span title="Twitter"><a href="#"><img src="https://www.shareicon.net/data/128x128/2016/08/01/640413_media_512x512.png"></a>
+				</div><div class="soc" span title="Instagram"><a href="#"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/instagram_circle_color-512.png"></a>
+				</div>			
+			</div>
+
+			<div class="copy"> Copyright © 2018 Digital Onions. All Rights Reserved.<a href id="#header-wrapper"><span class="goup">GO UP ⬆</span></a>
+			</div>
+
+		</div>
+		<!-- end of three-columns -->
+		
+	</footer>
+
+
+
+   <script src="scripts/slider.js"></script>
 	
-blockquote, q {
-	quotes: none; 
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-	  content: '';
-	  content: none; 
-}
-
-blockquote {
-	border-left: solid 0.5rem;
-	font-style: italic;
-	margin: 0 0 2rem 0;
-	padding: 1rem 0 1rem 2rem; 
-}
-
-blockquote {
-	border-left-color: rgba(0, 0, 0, 0.25); }
-
-
-.testimonials {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.testimonials > section{
-	margin: 0 auto;
-	justify-content: space-around;
-}
-	
-.testimonials > * {
-	width: 33.3333333333%; }
-.testimonials > * {
-	width: calc(33.3333333333% + 1rem); 
-}
-
-.testimonials .content {
-	/* border-radius: 4px; */
-	height: 100%;
-	padding: 1rem; 
-}
-.testimonials .content .author {
-	display: flex;
-	align-items: center; 
-}
-.testimonials .content .author blockquote {
-	margin: 0; 
-}
-.testimonials .content .author .image {
-/* margin-right: 1rem; */
-	width: 20%; 
-}
-.testimonials .content .author .image img {
-	border-radius: 100%;
-	max-width: 100%; 
-}
-.testimonials .content .credit {
-	font-size: 0.7rem; }
-
-.testimonials .content {
-/* background:  #0288d1; */
-	box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025); 
-}
-
-.testimonials .content .credit strong {
-	color: #0c457d;
-}
-
-.credit{
-	padding-left: 0.5rem;
-}
-
-
-
-
-/* ==========FOOTER=============== */	
-footer{
-	color: white;
-	padding: 10px;
-	font-size: 12px;
-	background-color: #0c457d;
-}
-
-.three-columns{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
-.social{
-	display: flex;
-}
-
-a>img{
-	height: 30px;
-	align-items: center;
-	justify-items: center;
-}
-
-.contacts{
-	justify-content: stretch;
-	text-align: center;
-	padding-left: 25px;
-	padding-left: 100px;
-}
-
-.social{
-	justify-items: center;
-	padding-left: 200px;
-}
-
-.copy{
-	padding-left: 160px;
-}
-
-.goup{
-	font-size: 15px;
-	font-weight: bold;
-	padding-left: 5px;
-}
-
-.goup:hover{
-	background-color: #fff;
-}
-
-
-
-
-
-
-@media only screen and (max-width: 600px) {
-  
-section{
-	/* max-width: 30%; */
-	/* min-width: 300px; */
-	/* padding: 10px;
-	margin: 5px; */
-	/* align-items: center; */
-	/* margin: 0 auto; */
-	padding: 5px;
-	justify-content: center;
-	/* margin-top: 10px; */
-}
-  
-  
-section:first-child{
-margin-top: 0;
-}
-}
+</body>
+		
+</html>
