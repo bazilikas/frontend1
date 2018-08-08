@@ -8,7 +8,10 @@ header{
 	width: 100%;
 	margin: 0 auto;
 }
-
+h2 {
+	color: #0c457d;
+	text-align:center;
+}
 .header-wrapper{
 	background-color: #0c457d;
 	display:flex;
