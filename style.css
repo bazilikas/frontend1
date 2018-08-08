@@ -158,12 +158,11 @@ nav a:active {
 
  /* ==========ABOUT=============== */
 
-.aboutblock{
-	padding: 200px;
+.about-home{
+	padding: 10px;
 	background-color:  #e1f5fe; /*#F37000 oranzine*/
 	text-align: center;
-	font-size: 50px;	
-}
+	}
 
 
    /* ==========KIDS TEACHERS VOLUNTIEERS=============== */
@@ -583,7 +582,27 @@ iframe{
 	height: 450px;
     padding: 20px 0;
 	}
-
+/* ==========About Site=============== */
+.aboutblock{
+	padding: 10px;
+	background-color:white;
+}
+.about-txt{
+	width:80%;
+margin: 0 auto;
+}
+.misionblock, .safetyblock {
+	padding: 10px;
+	background-color:#e1f5fe;}
+.goulsblock , .resultsblock{
+	padding: 10px;
+	background-color:white;}
+.valuesblock {
+	padding: 10px;
+	background-color:#dddddd;}
+.historyblock {
+	padding: 10px;
+	background-color:#e1f5fe;}
 
 
 
@@ -606,4 +625,4 @@ section{
 section:first-child{
 margin-top: 0;
 }
-}
+
