@@ -10,7 +10,7 @@
 6. 
 7. 
 8.Pildykit kas šauna į galvą dėl tobulinimų, kiek spėsim tiek sufixinsim
-9. 
+9.  
  */
 
  a{
@@ -186,10 +186,14 @@ nav a:active {
 
  /* ==========ABOUT=============== */
 
-.about-home{
+ .about-home{
 	padding: 10px;
 	background-color:  #e1f5fe; /*#F37000 oranzine*/
 	text-align: center;
+	}
+
+	.faqdrop>p{
+		font-size: 1.3rem;
 	}
 
 
@@ -610,27 +614,110 @@ iframe{
 	height: 450px;
     padding: 20px 0;
 	}
+
+
 /* ==========About Site=============== */
-.aboutblock{
+
+
+.about-wrapper{
+	
+	/* grid-auto-rows: minmax(165px, auto); */
+		grid-gap: 10px;	
+	
+		
+}
+
+.aboutblock, .misionblock, .goalsblock, .valuesblock, .historyblock, .safetyblock, .resultsblock {
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+.about-img, .goals-img, .history-img, .results-img, .safety-img {
+	grid-column-end: 1;
+	width: 150px;
+	padding: 0 30px;
+}
+
+.mission-img, .values-img {
+	grid-column-end: 3;
+	width: 150px;
+	padding: 0 30px;
+}
+
+.about-txt, .goals-txt, .history-txt, .results-txt{
+	grid-column-end: 2;
 	padding: 10px;
 	background-color:white;
+	width: 950px;
 }
-.about-txt{
-	width:80%;
-margin: 0 auto;
+
+
+.mission-txt, .values-txt, .safety-txt{
+	grid-column-end: 2;
+	padding: 10px;
+	width: 950px;
 }
-.misionblock, .safetyblock {
-	padding: 10px;
-	background-color:#e1f5fe;}
-.goulsblock , .resultsblock{
-	padding: 10px;
-	background-color:white;}
-.valuesblock {
-	padding: 10px;
-	background-color:#dddddd;}
-.historyblock {
-	padding: 10px;
-	background-color:#e1f5fe;}
+
+.mission-txt, .safety-txt{
+	background-color:#e1f5fe;
+}
+
+.values-txt{
+	background-color:#dddddd;
+}
+
+.mission-empty, .values-empty, .safety-empty{
+	grid-column-start: 1;
+	width: 150px;
+}
+
+
+.about-empty, .goals-empty, .history-empty, .results-empty{
+	grid-column-start: 3;
+	width: 150px;
+}
+
+
+/* =======================SPONSORS================ */
+
+.sponsors-section{
+	padding: 25px 50px;
+	text-align: center;
+}
+
+.boxed-section {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-basis: auto;
+	position: relative;
+	height: auto;
+	padding: 50px 50px;
+}
+
+
+.boxed-section>* {
+    margin: 0px 40px 40px 0px;
+}
+
+.boxed-section a div {
+    width: 200px;
+    height: 120px;
+}
+
+
+.highlight-box>div {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(146,137,224,.4);
+    border: 1px solid rgba(146,137,224,.1);
+}
+
 
 /*===========BLOG full screen===========*/
 
@@ -757,4 +844,3 @@ margin: 0 auto;
 			border: 1px solid black;
 		}
 	}
-
