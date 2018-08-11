@@ -312,8 +312,6 @@ section img{
 	/* align-items: stretch; */
 	justify-content: space-around; /*man su space around graziau atrodo, kai viena slieka lygiuoja centre*/
 	padding: 35px;
-
-	
 }
  
 .KTVcontainer section, .lectors-wrapper section, .parentfeedbacks section {
@@ -325,9 +323,9 @@ section img{
 }
 
 .KTVcontainer section img {
-	/* display: block; */
-	/* padding: 10px; */
-	/* margin: 0px auto;	 */
+	 display: block; 
+	padding: 10px; 
+	margin: 0px auto;
 }  
 .KTVcontainer section h2{
 	text-align: center;
@@ -400,42 +398,33 @@ section img{
 /* ==========PARENT FEEDBACKS=============== */	
 
 .parentfeedbacks{
-	
-	padding: 50px;
-	background-color: #C44242;; /*#F37000 oranzine*/
-
-}
-	
-
-.parent-title{
-	text-align: center;
-	font-size: 50px;
-	padding-bottom: 50px;
-	color: white;
-
-}
-
-	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around; 
+	padding: 20px;
+	background-color: #e1f5fe;
+}		
+		
 blockquote, q {
 	quotes: none; 
 }
 
 blockquote:before, blockquote:after, q:before, q:after {
-	  content: '';
-	  content: none; 
+	content: '';
+	content: none; 
 }
 
 blockquote {
 	border-left: solid 0.5rem;
 	font-style: italic;
-	margin: 0 0 2rem 0;
+	margin: 0 0 2rem 2rem;
 	padding: 1rem 0 1rem 2rem; 
 }
 
 blockquote {
-	border-left-color: rgba(0, 0, 0, 0.25); }
-
-
+	border-left-color: rgba(0, 0, 0, 0.25); 
+	}
+	
 .testimonials {
 	width: 100%;
 	display: flex;
