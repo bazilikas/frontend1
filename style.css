@@ -361,40 +361,42 @@ section img{
 
 /* ==========LECTORS=============== */	
 
-.lectors-wrapper{
-	padding:50px;
-	background-color: #0c457d;
-}
-
-.lectors{
+.lectors-wrapper, .lectors{
 	display: flex;
-	justify-content: space-around;
 	flex-wrap: wrap;
+	justify-content: space-around; 
+	padding: 20px;
+	background-color:#dddddd;
 }
-
+	
+.lectors-wrapper h2{
+	padding:10px;
+	margin:0 auto;
+}
+			
 .lectsection{
-	background-image: url("images/blueabstractbg.jpg");
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	max-width: 30%;
+	min-width: 300px;
+	background-color: #ffffff;
+	padding: 10px;	
 }
-/*.lectsection > img{
-	width: 100%;
-}
-*/
-.lectinfo > h3, .aboutlector{
-	color: white;
+
+.lectsection img{
+	display: block;
+   	margin-left: auto;
+    	margin-right: auto;
+	padding:5px;
+	margin-top:15px;
 }
 
 .lectinfo{
-	background-color: rgba(12, 69, 125, 0.8);
-	width: 100%;
-	text-align: center;
-	padding: 5px;
-	margin-top: 15px;
+	text-align: justify;
+	margin: 20px;	
 }
-
-
+	
+.lectsection h3{
+	text-align:center;
+}
 /* ==========PARENT FEEDBACKS=============== */	
 
 .parentfeedbacks{
