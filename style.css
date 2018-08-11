@@ -619,6 +619,54 @@ a.reg-button {
 	 width: 200px;}
 
 /* End of tables section */
+/* ==========REGISTRACION=============== */	
+.registration{
+	background-color: #dddddd;
+	padding:10px;
+	text-align:center;
+}
+ 
+.registration section {
+	margin: 0 auto;
+}	
+	
+.registration input[type=text], input[type=password] {
+    	width: 30%;
+	max-width:300px;
+   	padding: 10px;
+    	margin: 5px 0 10px 0;
+   	display: inline-block;
+    	border: none;
+    	background: #ffffff;
+}
+
+.registration div {
+	margin-right:15%;
+}
+
+.registration select {
+    	width: 30%;
+	max-width:300px;
+    	padding: 10px;
+    	margin: 5px 0 10px 0;
+    	display: inline-block;
+    	border: none;
+    	background: #ffffff;
+}
+
+.registerbtn {
+   	background-color: #0c457d;
+    	color: #ffffff;
+   	padding: 16px 16px;
+    	margin: 8px 0;
+    	border: none;
+    	cursor: pointer;
+    	width: 200px;
+    }
+
+.registerbtn:hover {
+  	background-color: #0288d1;
+}
 
 /* ==========FAQ=============== */
 /*=======================FAQ DROPDOWN====================*/
