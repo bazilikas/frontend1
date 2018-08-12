@@ -831,3 +831,16 @@ article.card{
 .blog-ausra img{
 	height: 550px;
 }
+
+.blog-lina{
+	display: flex;
+	flex-flow: column;
+	width: 60%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+
+.blog-lina img{
+	height: 550px;
+}
