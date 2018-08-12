@@ -206,7 +206,7 @@ header img{
 	}
  
 	.KTVcontainer section, .lectors-wrapper section, .parentfeedbacks section {
-		max-width: 31%;
+		max-width: 30%;
 		min-width: 300px;
 		background-color: rgba(255, 255, 255, 0.075);
 		padding: 15px;
@@ -214,9 +214,9 @@ header img{
 	}
 
 	.KTVcontainer section img {
-		/* display: block; */
-		/* padding: 10px; */
-		/* margin: 0px auto;	 */
+		display: block; 
+		padding: 10px;
+		margin: 0px auto;	
 	}
 
 	.KTVcontainer section h2{
@@ -479,8 +479,6 @@ header img{
 		width: 200px;
 	}
 
-/* End of tables section */
-
 /* ==========FAQ=============== */
 /*=======================FAQ DROPDOWN====================*/
 	.faq{
@@ -615,65 +613,35 @@ header img{
 
 /* ==========About Site=============== */
 
-	.about-wrapper{
-		
-		/* grid-auto-rows: minmax(165px, auto); */
-		grid-gap: 10px;	
+.missionblock, .historyblock {
+	background-color:white;
+	padding:10px;
+}
+.goulsblock , .safetyblock{
+	padding: 10px;
+	background-color:#e1f5fe;
 	}
-
-	.aboutblock, .misionblock, .goalsblock, .valuesblock, .historyblock, .safetyblock, .resultsblock {
-		display: flex;
-		align-items: center;
-		justify-content: center;	
+.valuesblock , .resultsblock{
+	padding: 10px;
+	background-color:#dddddd;}
+	
+.aboutsection{ 
+	display:flex;
+	width:80%;
+	margin:0 auto;
+	padding:10px;
+}
+.aboutsection  img{
+	width:30%;
+	padding:10px;
 	}
-
-	.about-img, .goals-img, .history-img, .results-img, .safety-img {
-		grid-column-end: 1;
-		width: 150px;
-		padding: 0 30px;
-	}
-
-	.mission-img, .values-img {
-		grid-column-end: 3;
-		width: 150px;
-		padding: 0 30px;
-	}
-
-	.about-txt, .goals-txt, .history-txt, .results-txt{
-		grid-column-end: 2;
-		padding: 10px;
-		background-color:white;
-		width: 950px;
-	}
-
-
-	.mission-txt, .values-txt, .safety-txt{
-		grid-column-end: 2;
-		padding: 10px;
-		width: 950px;
-	}
-
-	.mission-txt, .safety-txt{
-		background-color:#e1f5fe;
-	}
-
-	.values-txt{
-		background-color:#dddddd;
-	}
-
-	.mission-empty, .values-empty, .safety-empty{
-		grid-column-start: 1;
-		width: 150px;
-	}
-
-
-	.about-empty, .goals-empty, .history-empty, .results-empty{
-		grid-column-start: 3;
-		width: 150px;
-	}
+.aboutsection p{
+	width:70%;
+	margin:10px;
+}
 
 	
-/* ==========REGISTRACION=============== */	
+/* ==========REGISTRATION=============== */	
 .registration{
 	background-color: #dddddd;
 	padding:10px;
