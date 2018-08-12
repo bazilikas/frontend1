@@ -818,3 +818,16 @@ article.card{
 	height: 450px;
 	padding: 0;
 }
+/* ==========BLOG POST  =============== */
+.blog-ausra{
+	display: flex;
+	flex-flow: column;
+	width: 60%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+
+.blog-ausra img{
+	height: 550px;
+}
