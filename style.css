@@ -403,7 +403,7 @@ a>img{
 }
 
 
-/* ==========PROGRAM PAGE=============== */
+/* ===============================PROGRAM PAGE================================== */
 	.roww {
 		display: -ms-flexbox; /* IE10 */
 		display: flex;
@@ -428,7 +428,7 @@ a>img{
 
 
 
-/* ==========Information page=============== */
+/* ===================================Information page============================== */
 
 .information{
 	background-color:white; 	text-align: center;
@@ -526,7 +526,7 @@ a.reg-button {
 	content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
  
-/*FOOD*/
+/*==============FOOD==============*/
 .food{
 	background-color: #dddddd;
 	text-align:center;
@@ -599,7 +599,7 @@ iframe{
 	padding: 20px 0;
 }
 
-/* ==========About Site=============== */
+/* =============================About Site======================================= */
 
 .missionblock, .historyblock {
 	background-color:white;
@@ -629,7 +629,7 @@ iframe{
 }
 
 	
-/* ==========REGISTRATION=============== */	
+/* ========================================REGISTRATION=============================== */	
 .registration{
 	background-color: #dddddd;
 	padding:10px;
@@ -677,7 +677,7 @@ iframe{
   background-color: #0288d1;
 }	
 	
-/* =======================SPONSORS================ */
+/* =======================================SPONSORS==================================== */
 
 .sponsors-section{
 	padding: 25px 50px;
@@ -715,7 +715,7 @@ iframe{
 }
 
 
-/*===========BLOG full screen===========*/
+/*=============================BLOG full screen================================*/
 
 .text-center{
 	text-align:center
@@ -730,17 +730,19 @@ div.section{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-content: space-between; 
+	align-content: flex-start;
 	text-align: center;
 }
 	
 article.card{
 	max-width: 32%;
-	border: 2px solid black;
 	display: flex;
 	flex-wrap: wrap;
-	align-content: space-between;
-	margin-top: 10px;
+	align-content: flex-start;
+	margin-top: 20px;
+	background-color:  #e1f5fe; 
+	
+
 }
 
 .card__image{
@@ -755,7 +757,9 @@ article.card{
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	border: 1px solid black;
+	border-bottom: none;
 }
+
 
 /* ==========PAGE Contact US  =============== */	
 .Contusc{
@@ -819,7 +823,7 @@ article.card{
 	padding: 0;
 }
 /* ==========BLOG POST  =============== */
-.blog-ausra{
+.blog-default{
 	display: flex;
 	flex-flow: column;
 	width: 60%;
@@ -828,19 +832,10 @@ article.card{
 }
 
 
-.blog-ausra img{
-	height: 550px;
+.blog-default img{
+	width: 100%;
+	
 }
 
-.blog-lina{
-	display: flex;
-	flex-flow: column;
-	width: 60%;
-	margin: 0 auto;
-	padding: 20px;
-}
 
-.blog-lina img{
-	height: 550px;
-}
 
