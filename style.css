@@ -56,6 +56,9 @@
 		align-items: center;
 		margin-right: 20px;
 	}
+	nav:last-child{
+		margin-right: 0px;
+	}
 	.navbar {
 		overflow: hidden;
 		background-color: #0c457d;
@@ -87,6 +90,7 @@
 
 	.navbar a:hover, .dropdown:hover , nav a:hover{
 		background-color: #0288d1;
+		transition-duration: 1s;
 	}
 
 	.dropdown-content {
@@ -105,6 +109,7 @@
 		text-decoration: none;
 		display: block;
 		text-align: left;
+		
 	}
 
 	.dropdown-content a:hover {
@@ -210,12 +215,12 @@
 	
 	.KTVcontainer section, .lectors-wrapper section, .parentfeedbacks section {
 		max-width: 30%;
-		min-width: 300px;
 		background-color: rgba(255, 255, 255, 0.075);
 		padding: 15px;
 	}
 
 	.KTVcontainer section img {
+		width: 80%;
 		display: block; 
 		padding: 10px;
 		margin: 0px auto;	
@@ -248,6 +253,14 @@
 		padding: 10px;
 		text-align:justify;
 	}
+	.regbtn{
+		width: 15%;
+		opacity: 0.8;
+  		transition: 0.3s;
+	}
+	.regbtn:hover{
+		opacity: 1;
+	}
 
 
 	/* ==========LECTORS=============== */	
@@ -274,6 +287,7 @@
 
 	.lectsection img{
 		display: block;
+		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
 		padding:5px;
@@ -939,14 +953,17 @@
 		justify-content:space-around;
 	}
 	.header-wrapper img{
-			height: 40px;
-			margin: 5px;
+			height: 30px;
+			margin-top: 10px; 
 		}
 	/* ============MENU================ */  
 	nav{
 		display: flex;
-		align-items: center;
+		align-content: center;
 		margin-right: 20px;
+	}
+	nav:last-child{
+		margin-right: 0px;
 	}
 
 	.navbar {
@@ -956,10 +973,10 @@
 
 	.navbar a {
 		float: left;
-		font-size: 16px;
+		font-size: 15px;
 		color: white;
 		text-align: center;
-		padding: 16px 16px;
+		padding: 16px 10px;
 		text-decoration: none;
 	}
 
@@ -1090,21 +1107,21 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around; 
-		padding: 35px;
+		padding: 10px;
 		margin: 0 auto;
 	}
 
 	.KTVcontainer section, .lectors-wrapper section, .parentfeedbacks section {
-		max-width: 50%;
-		min-width: 500px;
+		max-width: 33%;
 		background-color: rgba(255, 255, 255, 0.075);
-		padding: 30px;
+		border: 1px solid #c6d8e9;
+		margin-bottom: 10px;
 	}
 
 	.KTVcontainer section img {
 		display: block; 
 		margin: 0px auto;
-		width: 100%;	
+		width: 90%;	
 	}
 
 	.KTVcontainer section h2{
@@ -1134,7 +1151,14 @@
 		padding: 10px;
 		text-align:justify;
 	}
-
+	.regbtn{
+		width: 25%;
+		opacity: 0.8;
+  		transition: 0.3s;
+	}
+	.regbtn:hover{
+		opacity: 1;
+	}
 
 	/* ==========LECTORS=============== */	
 
@@ -1142,7 +1166,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around; 
-		padding: 20px;
+		padding: 10px;
 		background-color:#dddddd;
 	}
 		
@@ -1152,8 +1176,7 @@
 	}
 				
 	.lectsection{
-		max-width: 50%;
-		min-width: 500px;
+		max-width: 33%;
 		background-color: #ffffff;
 		padding: 10px;	
 	}
@@ -1752,7 +1775,11 @@
 
 }
 
-	
+
+/*============================================MOBILE========================================= */
+/*============================================MOBILE========================================= */
+/*============================================MOBILE========================================= */
+
 	/* =========Mobile menu========== */
 
 @media only screen and (max-width: 600px){
@@ -1767,19 +1794,23 @@
 		width: 100%;
 		margin: 0 auto;
 		text-align: center;
+		
 			
 	}
 
 	.header-wrapper{
 		background-color: #0c457d;
-
+		display: flex;
 	}
 	
 	header img{
-		height: 40px;
+		width: 20%;
+		height: 20%;
 		margin: 5px;
 		}
-		
+	nav{
+		width:80% 
+	}
 	
 	.topnav {
 	overflow: hidden;
