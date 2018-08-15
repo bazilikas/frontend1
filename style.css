@@ -398,44 +398,47 @@
 		padding: 10px;
 		font-size: 12px;
 		background-color: #0c457d;
+		
 	}
 
 	.three-columns{
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: center;
+		
+	}
+
+	.three-columns > *{
+		width:30%; 
 	}
 
 	.social{
 		display: flex;
+		justify-content: center;
 	}
 
 	a>img{
-		height: 30px;
+		height: 40px;
 		align-items: center;
-		justify-items: center;
+		
 	}
 
 	.contacts{
-		justify-content: stretch;
 		text-align: center;
-		padding-left: 25px;
-		padding-left: 100px;
 	}
 
-	.social{
-		justify-items: center;
-		padding-left: 200px;
+	
+	.copy span{
+		color: #0288d1;
+		font-weight: bold;
+		font-size: 20px;
+		padding-left: 5px;
 	}
-
-	.copy{
-		padding-left: 160px;
-		}
 
 	.goup{
 		font-size: 15px;
 		font-weight: bold;
-		padding-left: 5px;
+		
 	}
 
 	.goup:hover{
@@ -889,7 +892,7 @@
 	.text-center{text-align:center}
 	.container-fluid{
 	margin:0 auto;
-	width: 90%;
+	width: 100%;
 	}
 
 	div.section{
@@ -923,7 +926,7 @@
 		border: 1px solid black;
 	}
 
-/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+/*===============================================*/
 
 	body {
 		font-family: 'Raleway', sans-serif;
@@ -1027,7 +1030,7 @@
 
 	.hideondesktop{ display: none; }
 
-
+/*========================HOME PAGE=========================*/
 
 	/* ============SLIDER================ */
 	* {box-sizing:border-box}
@@ -1307,26 +1310,23 @@
 	}
 
 	a>img{
-		height: 30px;
+		height: 40px;
 		align-items: center;
-		justify-items: center;
 	}
 
 	.contacts{
 		justify-content: stretch;
 		text-align: center;
-		padding-left: 25px;
-		padding-left: 100px;
-	}
-
-	.social{
-		justify-items: center;
-		padding-left: 200px;
 	}
 
 	.copy{
-		padding-left: 160px;
-		}
+		width: 30%;
+	}
+	.copy span{
+		color: #0288d1;
+		font-weight: bold;
+		font-size: 20px
+	}
 
 	.goup{
 		font-size: 15px;
@@ -1780,10 +1780,11 @@
 /*============================================MOBILE========================================= */
 /*============================================MOBILE========================================= */
 
-	/* =========Mobile menu========== */
+
 
 @media only screen and (max-width: 600px){
 
+	/* =========Mobile menu========== */
 	body {
 		font-family: 'Raleway', sans-serif;
 		font-size: 12pt;
@@ -1916,6 +1917,254 @@
 	}
 
 
+/* =====================HOME PAGE====================== */
+/* ==========ABOUT=============== */
+
+.about-home{
+	padding: 5px;
+	background-color:  #e1f5fe; /*#F37000 oranzine*/
+	text-align: center;
+}
+
+/* ==========KIDS TEACHERS VOLUNTIEERS=============== */
+	
+.KTVcontainer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around; 
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.KTVcontainer section, .lectors-wrapper section, .parentfeedbacks section {
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.075);
+	border: 1px solid #c6d8e9;
+	margin-bottom: 10px;
+}
+
+.KTVcontainer section img {
+	display: block; 
+	margin: 0px auto;
+	width: 100%;	
+}
+
+.KTVcontainer section h2{
+	text-align: center;
+	}
+
+.KTVcontainer a {
+	display:block;
+	text-align:center;
+	background-color:#0c457d;
+	color: white;
+	padding: 10px;
+	margin:0px auto;
+	text-decoration: none;
+} 
+
+.KTVcontainer section a:hover	{
+	text-decoration: none;
+}
+
+.about{
+	font-size: 1em;
+	text-align: center;
+}
+
+.text{
+	padding: 10px;
+	text-align:justify;
+}
+.regbtn{
+	width: 40%;
+	opacity: 0.8;
+	  transition: 0.3s;
+}
+.regbtn:hover{
+	opacity: 1;
+}
+
+/* ==========LECTORS=============== */	
+
+.lectors-wrapper, .lectors{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around; 
+	padding: 10px;
+	background-color:#dddddd;
+}
+	
+.lectors-wrapper h2{
+	padding:10px;
+	margin:0 auto;
+}
+			
+.lectsection{
+	width: 100%;
+	background-color: #ffffff;
+	padding: 10px;	
+}
+
+.lectsection img{
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding:5px;
+	margin-top:15px;
+}
+
+.lectinfo{
+	text-align: justify;
+	margin: 20px;	
+	}
+	
+.lectsection h3{
+	text-align:center;
+}
+
+/* ==========PARENT FEEDBACKS=============== */	
+
+.parentfeedbacks{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around; 
+	padding: 20px;
+	background-color: #e1f5fe;
+}	
+		
+blockquote, q {
+	quotes: none; 
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none; 
+}
+
+blockquote {
+	border-left: solid 0.5rem;
+	font-style: italic;
+	margin: 0 0 2rem 2rem;
+	padding: 1rem 0 1rem 2rem; 
+}
+
+blockquote {
+	border-left-color: rgba(0, 0, 0, 0.25); 
+	}
+
+.testimonials {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.testimonials > section{
+	margin: 0 auto;
+	justify-content: space-around;
+}
+		
+.testimonials > * {
+	width: 33.3333333333%;
+	}
+
+.testimonials > * {
+	width: calc(33.3333333333% + 1rem); 
+}
+
+.testimonials .content {
+	height: 100%;
+	padding: 1rem; 
+}
+
+.testimonials .content .author {
+	display: flex;
+	align-items: center; 
+}
+
+.testimonials .content .author blockquote {
+	margin: 0; 
+	}
+
+.testimonials .content .author .image {
+	width: 20%; 
+}
+
+.testimonials .content .author .image img {
+	border-radius: 100%;
+	max-width: 100%; 
+}
+
+.testimonials .content .credit {
+	font-size: 0.7rem; 
+}
+
+.testimonials .content {
+	box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025); 
+}
+
+.testimonials .content .credit strong {
+	color: #0c457d;
+}
+
+.credit{
+	padding-left: 0.5rem;
+}
+
+/* ==========FOOTER=============== */	
+footer{
+	color: white;
+	padding: 10px;
+	font-size: 12px;
+	background-color: #0c457d;
+}
+
+.three-columns{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social{
+	display: flex;
+}
+
+a>img{
+	height: 30px;
+	align-items: center;
+}
+
+.contacts{
+	justify-content: stretch;
+	text-align: center;
+	
+}
+
+.social{
+	text-align: center
+}
+
+.copy{
+	width: 30%
+}
+
+.copy span{
+	color: #0288d1;
+	font-weight: bold;
+	font-size: 16px
+}
+
+.goup{
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+.goup:hover{
+	background-color: #fff;
+}
 
 
 
@@ -1931,7 +2180,6 @@
 	.container-fluid{
 	margin:0 auto;
 	width: 100%;
-	border: 1px solid black;
 	}
 
 	div.section{
@@ -1942,7 +2190,6 @@
 
 	article.card{
 		max-width: 100%;
-		border: 2px solid black;
 		display: flex;
 		flex-wrap: wrap;
 		align-content: space-between;
@@ -1959,7 +2206,6 @@
 		height: 0; 
 		background-size: contain;
 		background-repeat: no-repeat;
-		border: 1px solid black;
 	}
 
 }
