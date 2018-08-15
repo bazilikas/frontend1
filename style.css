@@ -14,13 +14,14 @@
  */
 
  a{
+	color: inherit;
 	text-decoration: none;
 } 
 
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 @media only screen and (min-width: 1201px){
-
+	
 		body {
 			font-family: 'Raleway', sans-serif;
 			font-size: 12pt;
@@ -47,9 +48,14 @@
 		justify-content:space-around;
 	}
 	.header-wrapper img{
-			height: 40px;
-			margin: 5px;
-		}
+		height: 40px;
+		margin: 5px;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
 	/* ============MENU================ */  
 	nav{
 		display: flex;
@@ -769,12 +775,20 @@
 		width: 80%;
 	}
 
-	div.section{
+	.sectionb{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-content: flex-start;
+		text-align: justify;
+	}
+	.sectionb h4{
 		text-align: center;
+	}
+
+	.sectionb a:hover{
+		text-decoration: none;	
+		color: #0288d1;
 	}
 		
 	article.card{
@@ -803,6 +817,10 @@
 		border-bottom: none;
 	}
 
+	.card__image:hover{
+		opacity: 0.5;
+		transition: .5s ease;
+	}
 
 	/* ==========PAGE Contact US  =============== */	
 	.Contusc{
@@ -889,45 +907,7 @@
 
 @media only screen and (min-width: 601px) and (max-width: 1200px){
 
-	.text-center{text-align:center}
-	.container-fluid{
-	margin:0 auto;
-	width: 100%;
-	}
-
-	div.section{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-content: space-between; 
-		text-align: center;
-	}
 	
-	article.card{
-		max-width: 49%;
-		border: 2px solid black;
-		display: flex;
-		flex-wrap: wrap;
-		align-content: space-between;
-		margin-top: 10px;
-	}
-
-	.card__image{
-		padding-top: 66.64%; 
-		/* becouse background has no height and we dont want to set it in px
-		/* (img-height / img-width * container-width) */
-					/* (853 / 1280 * 100) */
-		width: 100%;
-		height: 0; 
-		background-size: contain;
-		background-repeat: no-repeat;
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
-		border: 1px solid black;
-	}
-
-/*===============================================*/
-
 	body {
 		font-family: 'Raleway', sans-serif;
 		font-size: 12pt;
@@ -1651,41 +1631,45 @@
 	}
 
 
-	/*=============================BLOG full screen================================*/
+	/*=============================BLOG================================*/
 
-	.text-center{
-		text-align:center
-	}
-		
+	.text-center{text-align:center}
 	.container-fluid{
-		margin:0 auto;
-		width: 80%;
+	margin:0 auto;
+	width: 95%;
 	}
 
-	div.section{
+	.sectionb{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-content: flex-start;
+		text-align: justify;
+	}
+	.sectionb h4{
 		text-align: center;
 	}
-		
+
+	.sectionb a:hover{
+		text-decoration: none;	
+		color: #0288d1;
+	}
+	
 	article.card{
-		max-width: 32%;
+		width: 32%;
 		display: flex;
 		flex-wrap: wrap;
 		align-content: flex-start;
-		margin-top: 20px;
+		margin-top: 10px;
 		background-color:  #e1f5fe; 
 		
-
 	}
 
 	.card__image{
 		padding-top: 66.64%; 
-			/* becouse background has no height and we dont want to set it in px
-			/* (img-height / img-width * container-width) */
-						/* (853 / 1280 * 100) */
+		/* becouse background has no height and we dont want to set it in px
+		/* (img-height / img-width * container-width) */
+					/* (853 / 1280 * 100) */
 		width: 100%;
 		height: 0; 
 		background-size: contain;
@@ -1696,7 +1680,7 @@
 		border-bottom: none;
 	}
 
-
+   
 	/* ==========PAGE Contact US  =============== */	
 	.Contusc{
 		margin: 0 auto;
@@ -1762,7 +1746,7 @@
 	.blog-default{
 		display: flex;
 		flex-flow: column;
-		width: 60%;
+		width: 80%;
 		margin: 0 auto;
 		padding: 20px;
 	}
@@ -2182,10 +2166,21 @@ a>img{
 	width: 100%;
 	}
 
-	div.section{
+	.sectionb{
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: flex-start;
+		text-align: justify;
+		width: 100%;
+	}
+	.sectionb h4{
 		text-align: center;
+	}
+
+	.sectionb a:hover{
+		text-decoration: none;	
+		color: #0288d1;
 	}
 
 	article.card{
@@ -2195,6 +2190,10 @@ a>img{
 		align-content: space-between;
 		margin-top: 10px;
 		padding-bottom: 50px; 
+	}
+	.card__body{
+		width: 90%;
+		margin: 0 auto;
 	}
 
 	.card__image{
@@ -2206,6 +2205,20 @@ a>img{
 		height: 0; 
 		background-size: contain;
 		background-repeat: no-repeat;
+	}
+
+	/* ==========BLOG POSTs  =============== */
+	.blog-default{
+		display: flex;
+		flex-flow: column;
+		width: 95%;
+		margin: 0 auto;
+		padding: 20px;
+	}
+
+
+	.blog-default img{
+		width: 100%;
 	}
 
 }
