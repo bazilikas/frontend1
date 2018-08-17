@@ -12,7 +12,12 @@
 8.Pildykit kas šauna į galvą dėl tobulinimų, kiek spėsim tiek sufixinsim
 9.  
  */
- 
+
+ a{
+	color: inherit;
+	text-decoration: none;
+} 
+
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 @media only screen and (min-width: 1201px){
@@ -27,12 +32,11 @@
 			margin: 0 auto;
 		}
 
+
 	a{
-	text-decoration: none;
-	color:#0c457d;
-	padding:5px;
-	}
-		h2 {
+		text-decoration: none;
+	} 
+	h2 {
 		color: #0c457d;
 		text-align:center;
 		}
@@ -199,8 +203,9 @@
 		
 	}
 	.faqdrop p{
-		width: 100%;
+		width: 70%;
 		text-align: justify;
+		font-size: 22px;
 		margin: 0 auto;
 		padding: 10px;
 	}
@@ -761,7 +766,10 @@
 
 	/*=============================BLOG full screen================================*/
 
-	
+	.text-center{
+		text-align:center
+	}
+		
 	.container-fluid{
 		margin:0 auto;
 		width: 80%;
@@ -773,19 +781,11 @@
 		justify-content: space-between;
 		align-content: flex-start;
 		text-align: justify;
-		padding-bottom:30px;
-	
 	}
-	.sectionb h3{
+	.sectionb h4{
 		text-align: center;
 	}
-    .sectionb a:{
-		text-decoration: none;
-		text-align:center;
-		padding:10px;
-		
-					
-	}
+
 	.sectionb a:hover{
 		text-decoration: none;	
 		color: #0288d1;
@@ -797,12 +797,11 @@
 		flex-wrap: wrap;
 		align-content: flex-start;
 		margin-top: 20px;
-		background-color:  #f1f1f1; 
+		background-color:  #e1f5fe; 
+		
+
 	}
-	
-	.card p {
-		padding:15px;
-	}
+
 	.card__image{
 		padding-top: 66.64%; 
 			/* becouse background has no height and we dont want to set it in px
@@ -814,8 +813,15 @@
 		background-repeat: no-repeat;
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
-		margin:5px;
+		border: 1px solid black;
+		border-bottom: none;
 	}
+
+	.card__image:hover{
+		opacity: 0.5;
+		transition: .5s ease;
+	}
+
 	/* ==========PAGE Contact US  =============== */	
 	.Contusc{
 		margin: 0 auto;
@@ -915,10 +921,8 @@
 
 
 	a{
-	text-decoration: none;
-	color:#0c457d;
-	padding:5px;
-	}
+		text-decoration: none;
+	} 
 
 	h2 {
 		color: #0c457d;
@@ -1093,7 +1097,7 @@
 	.KTVcontainer section, .lectors-wrapper section, .parentfeedbacks section {
 		max-width: 33%;
 		background-color: rgba(255, 255, 255, 0.075);
-		
+		border: 1px solid #c6d8e9;
 		margin-bottom: 10px;
 	}
 
@@ -1131,7 +1135,6 @@
 		text-align:justify;
 	}
 	.regbtn{
-		margin:10px;
 		width: 25%;
 		opacity: 0.8;
   		transition: 0.3s;
@@ -1231,7 +1234,7 @@
 
 	.testimonials .content {
 		height: 100%;
-		padding: 10px; 
+		padding: 1rem; 
 	}
 
 	.testimonials .content .author {
@@ -1642,18 +1645,11 @@
 		justify-content: space-between;
 		align-content: flex-start;
 		text-align: justify;
-		padding-bottom:30px;
 	}
-	.sectionb h3{
+	.sectionb h4{
 		text-align: center;
 	}
-	.sectionb a:{
-		text-decoration: none;
-		text-align:center;
-		padding:10px;
-		
-					
-	}
+
 	.sectionb a:hover{
 		text-decoration: none;	
 		color: #0288d1;
@@ -1665,33 +1661,25 @@
 		flex-wrap: wrap;
 		align-content: flex-start;
 		margin-top: 10px;
-		background-color:  #f1f1f1;
+		background-color:  #e1f5fe; 
 		
 	}
 
-	.card p {
-		padding:15px;
-	}
 	.card__image{
 		padding-top: 66.64%; 
-			/* becouse background has no height and we dont want to set it in px
-			/* (img-height / img-width * container-width) */
-						/* (853 / 1280 * 100) */
+		/* becouse background has no height and we dont want to set it in px
+		/* (img-height / img-width * container-width) */
+					/* (853 / 1280 * 100) */
 		width: 100%;
 		height: 0; 
 		background-size: contain;
 		background-repeat: no-repeat;
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
-		margin:5px;
+		border: 1px solid black;
+		border-bottom: none;
+	}
 
-	
-	
-	
-	
-	
-	
-	
    
 	/* ==========PAGE Contact US  =============== */	
 	.Contusc{
@@ -1786,15 +1774,7 @@
 		font-size: 12pt;
 		color: black;
 		}
-		
-	h2 {
-		color: #0c457d;
-		text-align:center;
-		}
-a{
-text-decoration: none;
-color: #0c457d;
- }
+
 	header{
 		width: 100%;
 		margin: 0 auto;
@@ -1806,14 +1786,12 @@ color: #0c457d;
 	.header-wrapper{
 		background-color: #0c457d;
 		display: flex;
-		
 	}
 	
 	header img{
 		width: 20%;
 		height: 20%;
 		margin: 5px;
-		
 		}
 	nav{
 		width:80% 
@@ -1821,7 +1799,7 @@ color: #0c457d;
 	
 	.topnav {
 	overflow: hidden;
-	background-color:#0c457d;
+	background-color:#86c1e0;
 	}
 	
 	.topnav a {
@@ -1836,7 +1814,7 @@ color: #0c457d;
 	
 	.active {
 	background-color: #0288d1;
-	color: #0c457d;
+	color: black;
 	}
 	
 	.topnav .icon {
@@ -1853,20 +1831,20 @@ color: #0c457d;
 	  border: none;
 	  outline: none;
 	  color: white;
-	  padding: 16px 16px;
+	  padding: 14px 16px;
 	  background-color: inherit;
 	  font-family: inherit;
 	  margin: 0;
 	}
 	
 	.dropdown .dropbtn .dropdown-content{
-	  color: #0c457d;
+	  color: black;
 	}
 	
 	.dropdown-content {
 	  display: none;
 	  position: absolute;
-	  background-color: lightblue;
+	  background-color: lightgray;
 	  min-width: 160px;
 	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	  z-index: 1;
@@ -1874,7 +1852,7 @@ color: #0c457d;
 	
 	.dropdown-content a {
 	  float: none;
-	  color: #0c457d;
+	  color: black;
 	  padding: 12px 16px;
 	  text-decoration: none;
 	  display: block;
@@ -1882,13 +1860,13 @@ color: #0c457d;
 	}
 	
 	.topnav a:hover, .dropdown:hover .dropbtn {
-	background-color: #0288d1;
+	background-color: #555;
 	color: white;
 	}
 	
 	.dropdown-content a:hover {
-	  background-color: #ffffff;
-	  color: #0c457d;
+	  background-color: #ddd;
+	  color: black;
 	}
 	
 	.dropdown:hover .dropdown-content {
@@ -1931,11 +1909,6 @@ color: #0c457d;
 	background-color:  #e1f5fe; /*#F37000 oranzine*/
 	text-align: center;
 }
- .about-home p {
-	 margin: 15px;
-	 text-align:justify;
- }
-
 
 /* ==========KIDS TEACHERS VOLUNTIEERS=============== */
 	
@@ -1943,17 +1916,20 @@ color: #0c457d;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around; 
-	
+	padding: 10px;
 	margin: 0 auto;
 }
 
 .KTVcontainer section, .lectors-wrapper section, .parentfeedbacks section {
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.075);
-	}
+	border: 1px solid #c6d8e9;
+	margin-bottom: 10px;
+}
 
 .KTVcontainer section img {
 	display: block; 
+	margin: 0px auto;
 	width: 100%;	
 }
 
@@ -1967,7 +1943,7 @@ color: #0c457d;
 	background-color:#0c457d;
 	color: white;
 	padding: 10px;
-	margin: 20px auto;
+	margin:0px auto;
 	text-decoration: none;
 } 
 
@@ -1985,9 +1961,9 @@ color: #0c457d;
 	text-align:justify;
 }
 .regbtn{
-	width: 50%;
+	width: 40%;
 	opacity: 0.8;
-	transition: 0.3s;
+	  transition: 0.3s;
 }
 .regbtn:hover{
 	opacity: 1;
@@ -2019,6 +1995,7 @@ color: #0c457d;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	padding:5px;
 	margin-top:15px;
 }
 
@@ -2069,9 +2046,8 @@ blockquote {
 }
 
 .testimonials > section{
-	margin: 10px auto;
+	margin: 0 auto;
 	justify-content: space-around;
-	padding: 15px;
 }
 		
 .testimonials > * {
@@ -2175,7 +2151,16 @@ a>img{
 }
 
 
+
+
+
+
+
+
+
+
 	/* =====================BLOG PAGE CSS======================= */
+	.text-center{text-align:center}
 	.container-fluid{
 	margin:0 auto;
 	width: 100%;
@@ -2188,16 +2173,11 @@ a>img{
 		align-content: flex-start;
 		text-align: justify;
 		width: 100%;
-		
 	}
-	.sectionb h3{
+	.sectionb h4{
 		text-align: center;
 	}
-    .sectionb a:{
-		text-decoration: none;
-		text-align:center;
-	     padding:10px;}
-		
+
 	.sectionb a:hover{
 		text-decoration: none;	
 		color: #0288d1;
@@ -2209,10 +2189,9 @@ a>img{
 		flex-wrap: wrap;
 		align-content: space-between;
 		margin-top: 10px;
-		background-color:  #f1f1f1; 
-		padding:10px;
+		padding-bottom: 50px; 
 	}
-	.card_body{
+	.card__body{
 		width: 90%;
 		margin: 0 auto;
 	}
@@ -2226,41 +2205,8 @@ a>img{
 		height: 0; 
 		background-size: contain;
 		background-repeat: no-repeat;
-		background-repeat: no-repeat;
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
-		margin:5px;
 	}
-.card p {
-		padding:15px;
-	}
-	
-	
-	
-	
-	
-	
-	
-	
 
-	
-	
-		
-		
-	
-		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	/* ==========BLOG POSTs  =============== */
 	.blog-default{
 		display: flex;
