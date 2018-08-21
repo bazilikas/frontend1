@@ -2298,6 +2298,7 @@ a>img{
 	}
 	
 	.blog-default ul{
+		width: 90%;
 		list-style: none;
 		text-align:left;
 		padding:0px 5px 5px 5px;}
