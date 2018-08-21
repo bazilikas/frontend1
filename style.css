@@ -888,16 +888,36 @@ a{
 	.blog-default{
 		display: flex;
 		flex-flow: column;
-		width: 60%;
+		width: 80%;
 		margin: 0 auto;
 		padding: 20px;
 	}
-
-
 	.blog-default img{
-		width: 100%;
+		width: 80%;
+		margin: 0 auto;
+		padding:10px;
 		
 	}
+	.blog-default p {
+		text-align:justify;
+		margin: 0;
+		padding: 5px;
+	}
+	
+	.blog-default ul{
+		list-style: none;
+		text-align:left;
+		padding:0px 5px 5px 5px;}
+	
+	.blog-default li {
+		text-align:justify;
+		padding:0px 5px 5px 5px;
+		}
+	
+	.blog-default h3 {
+		text-align:left;
+		color:#0c457d;
+		margin:5px;}
 
 }
 
@@ -1763,15 +1783,35 @@ a{
 	.blog-default{
 		display: flex;
 		flex-flow: column;
-		width: 80%;
+		width: 100%;
 		margin: 0 auto;
 		padding: 20px;
 	}
-
-
 	.blog-default img{
 		width: 100%;
+		padding:10px;
+		
 	}
+	.blog-default p {
+		text-align:justify;
+		margin: 0;
+		padding: 5px;
+	}
+	
+	.blog-default ul{
+		list-style: none;
+		text-align:left;
+		padding:0px 5px 5px 5px;}
+	
+	.blog-default li {
+		text-align:justify;
+		padding:0px 5px 5px 5px;
+		}
+	
+	.blog-default h3 {
+		text-align:left;
+		color:#0c457d;
+		margin:5px;}
 
 
 }
@@ -2177,15 +2217,6 @@ a>img{
 	background-color: #fff;
 }
 
-
-
-
-
-
-
-
-
-
 	/* =====================BLOG PAGE CSS======================= */
 	.container-fluid{
 	margin:0 auto;
@@ -2250,15 +2281,37 @@ a>img{
 	.blog-default{
 		display: flex;
 		flex-flow: column;
-		width: 95%;
+		width: 90%;
 		margin: 0 auto;
 		padding: 20px;
 	}
-
-
 	.blog-default img{
-		width: 100%;
+		width: 90%;
+		margin: 0 auto;
+		padding:10px;				
 	}
+	.blog-default p {
+		width: 90%;
+		text-align:justify;
+		margin: 0;
+		padding: 5px;
+	}
+	
+	.blog-default ul{
+		list-style: none;
+		text-align:left;
+		padding:0px 5px 5px 5px;}
+	
+	.blog-default li {
+		text-align:justify;
+		padding:0px 5px 5px 5px;
+		}
+	
+	.blog-default h3 {
+		width: 90%;
+		text-align:left;
+		color:#0c457d;
+		margin:5px;}
 
 }
 
