@@ -739,29 +739,52 @@ a{
 		background-color:white;
 		padding:10px;
 	}
+
 	.goulsblock , .safetyblock{
 		padding: 10px;
 		background-color:#e1f5fe;
-		}
+	}
+
 	.valuesblock , .resultsblock{
 		padding: 10px;
-		background-color:#dddddd;}
+		background-color:#dddddd;
+	}
 		
-	.aboutsection{ 
+	.aboutsection { 
 		display:flex;
 		width:80%;
 		margin:0 auto;
 		padding:10px;
+		align-items: center;
 	}
-	.aboutsection  img{
-		width:30%;
+	
+	.aboutsection_order {
+		display:flex;
+		width:80%;
+		margin:0 auto;
 		padding:10px;
-		}
+		align-items: center;
+	}
+
+
+	.aboutsection  img{
+		/* width:30%; */
+		padding:10px;
+	}
+
 	.aboutsection p{
 		width:70%;
 		margin:10px;
+		text-align: justify;
+	
 	}
 
+	.aboutsection_order p{
+		width:70%;
+		margin:10px;
+		text-align: justify;
+
+	}
 		
 	
 	/* =======================================SPONSORS==================================== */
@@ -2466,6 +2489,45 @@ a{
 	.goup:hover{
 		background-color: #fff;
 	}
+
+	
+	
+	
+	
+/* =====================ABOUT page======================= */
+
+.aboutwrapper{
+	margin: 15px;	
+}
+
+.aboutwrapper img{
+	width: 100%;
+}
+
+.aboutwrapper p{
+	text-align: justify;
+}
+
+.aboutsection_order{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.imagefirst{
+	width: 100%;
+}
+
+#imagefirst{
+	order: 1;
+}
+
+#secondtext{
+	display: flex;
+	order: 2;
+}
+
+
 
 
 
