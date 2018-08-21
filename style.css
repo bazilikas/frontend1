@@ -1467,9 +1467,12 @@ a{
 		width: 30%;
 	}
 	.copy span{
+		display: block;
 		color: #0288d1;
 		font-weight: bold;
-		font-size: 20px
+		font-size: 15px;
+		width: 30%;
+		margin: 0 auto;
 	}
 
 	.goup{
