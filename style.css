@@ -260,13 +260,96 @@ a{
 		padding: 10px;
 		text-align:justify;
 	}
-	.regbtn{
-		width: 15%;
-		opacity: 0.8;
-  		transition: 0.3s;
+/*-------------------------MODAL-------------------------*/
+	.modal {
+   		 display: none; /* Hidden by default */
+   		 position: fixed; /* Stay in place */
+    		z-index: 1; /* Sit on top */
+    		padding-top: 50px; /* Location of the box */
+   		padding-left:30%;
+    		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 	}
-	.regbtn:hover{
-		opacity: 1;
+
+	.modal-content {
+	    position: relative;
+	    background-color: #ffffff;
+	    margin:0 ;
+	    padding: 0;
+	    border: 1px solid #888;
+	    width: 50%;
+	    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	    -webkit-animation-name: animatetop;
+	    -webkit-animation-duration: 0.4s;
+	    animation-name: animatetop;
+	    animation-duration: 0.4s
+	}
+	.modalbtn {
+		background-color: #0c457d;
+		color: white;
+		padding: 16px 16px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 270px;
+	}
+		
+	.modalbtn:hover {
+		background-color: #0288d1;
+	}	
+
+/* Add Animation */
+	@-webkit-keyframes animatetop {
+    	from {top:-300px; opacity:0} 
+    	to {top:0; opacity:1}
+	}
+
+	@keyframes animatetop {
+   	 from {top:-300px; opacity:0}
+    	to {top:0; opacity:1}
+	}
+
+/* The Close Button */
+	.close {
+		padding: 5px 5px;
+	   	color: white;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.close:hover, .close:focus {
+   		 color: #0288d1;
+   		 text-decoration: none;
+    		cursor: pointer;
+	}
+
+	.modal-header {
+    		padding: 2px 16px;
+    		background-color: #0c457d;
+    		color: white;
+	}
+	.modal-header h2{
+		color:white;
+	}
+
+	.modal-body {
+		padding: 30px;
+		margin-left:70px;
+	}
+
+	.modal-body input[type=text],select {
+		width: 80%;
+		max-width:300px;
+		padding: 10px;
+		margin: 5px 0 10px 0;
+		display: inline-block;
+		border: 1px solid #dddddd;
+		background: #ffffff;
 	}
 
 
@@ -679,54 +762,7 @@ a{
 	}
 
 		
-	/* ========================================REGISTRATION=============================== */	
-	.registration{
-		background-color: #dddddd;
-		padding:10px;
-		text-align:center;	
-	}
-
-	.registration section {
-		margin: 0 auto; 
-	}	
-		
-	.registration input[type=text] {
-		width: 30%;
-		max-width:300px;
-		padding: 10px;
-		margin: 5px 0 10px 0;
-		display: inline-block;
-		border: none;
-		background: #ffffff;
-	}
-
-	.registration div
-	{margin-right:15%;}
-
-	.registration select {
-		width: 30%;
-		max-width:300px;
-		padding: 10px;
-		margin: 5px 0 10px 0;
-		display: inline-block;
-		border: none;
-		background: #ffffff;
-	}
-
-	.registerbtn {
-		background-color: #0c457d;
-		color: white;
-		padding: 16px 16px;
-		margin: 8px 0;
-		border: none;
-		cursor: pointer;
-		width: 200px;
-		}
-		
-	.registerbtn:hover {
-	background-color: #0288d1;
-	}	
-		
+	
 	/* =======================================SPONSORS==================================== */
 
 	.sponsors-section{
