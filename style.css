@@ -205,9 +205,8 @@ a{
 		
 	}
 	.faqdrop p{
-		width: 70%;
+		width: 100%;
 		text-align: justify;
-		font-size: 22px;
 		margin: 0 auto;
 		padding: 10px;
 	}
@@ -691,7 +690,7 @@ a{
 		margin: 0 auto; 
 	}	
 		
-	.registration input[type=text], input[type=password] {
+	.registration input[type=text] {
 		width: 30%;
 		max-width:300px;
 		padding: 10px;
@@ -826,53 +825,61 @@ a{
 	/* ==========PAGE Contact US  =============== */	
 	.Contusc{
 		margin: 0 auto;
-		width: 60%;
-		display:flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-	}
-
-	.Contusc h3{
 		width: 80%;
+		display:flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		}
+	.Contusc h2{
+		text-align=center;
 	}
-
+	
 	.Contusc div{
 		width: 50%;
-	}
-
+		text-align:left;
+		background-color:inherit;
+		padding:20px;
+	}	
+	
 	.Contusc form{
 		width: 80%;
 	}
-
-	.Contusc form input, textarea{
+	.Contusc form div{
+		padding:1px;
+	}
+	.Contusc input[type=text], textarea {
 		width: 100%;
-	}
-
-	.Contusc button{
-		background-color: DodgerBlue; 
-		border: none;
-		width: 150px;
-		color: white;
-		padding: 20px;
-		text-align: center;
-		text-decoration: none;
+		max-width:300px;
+		padding: 10px;
+		margin: 5px 0 10px 0;
 		display: inline-block;
-		font-size: 16px;
-		margin: 4px 2px;
-		cursor: pointer;
-		border-radius: 2px;
+		border: 1px solid #0c457d;
+		background: #ffffff;
 	}
-
+	
+	.Contusc button{
+		background-color: #0c457d;
+		color: white;
+		padding: 16px 16px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 200px;
+	}
+	
+	.Contusc button:hover {
+	background-color: #0288d1;
+	}	
+	
 	.Contusc .location{
 		width: 50%;
 		text-align:left;
 		background-color:inherit;
 	}
 
-	.Contusc .location h2{
-		text-align: left;
+	.Contusc .location p{
+		margin-left:40px;
 	}
-
 	.Contusc .two-col{
 		align-items: center;
 		width:100%;
@@ -914,11 +921,10 @@ a{
 		padding:0px 5px 5px 5px;
 		}
 	
-	.blog-default h3 {
+ .blog-default h3 {
 		text-align:left;
 		color:#0c457d;
 		margin:5px;}
-
 }
 
 /* ========================================TABLET========================================== */
@@ -1719,55 +1725,64 @@ a{
 
    
 	/* ==========PAGE Contact US  =============== */	
+
 	.Contusc{
 		margin: 0 auto;
-		width: 60%;
+		width: 100%;
 		display:flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		flex-wrap: wrap;
+		}
+	.Contusc h2{
+		text-align=center;
 	}
-
-	.Contusc h3{
-		width: 80%;
-	}
-
+	
 	.Contusc div{
 		width: 50%;
-	}
-
+		text-align:left;
+		background-color:inherit;
+		padding:20px;
+	}	
+	
 	.Contusc form{
 		width: 80%;
 	}
-
-	.Contusc form input, textarea{
+	.Contusc form div{
+		padding:1px;
+	}
+	.Contusc input[type=text], textarea {
 		width: 100%;
-	}
-
-	.Contusc button{
-		background-color: DodgerBlue; 
-		border: none;
-		width: 150px;
-		color: white;
-		padding: 20px;
-		text-align: center;
-		text-decoration: none;
+		max-width:300px;
+		padding: 10px;
+		margin: 5px 0 10px 0;
 		display: inline-block;
-		font-size: 16px;
-		margin: 4px 2px;
-		cursor: pointer;
-		border-radius: 2px;
+		border: 1px solid #0c457d;
+		background: #ffffff;
 	}
-
+	
+	.Contusc button{
+		background-color: #0c457d;
+		color: white;
+		padding: 16px 16px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 200px;
+	}
+	
+	.Contusc button:hover {
+	background-color: #0288d1;
+	}	
+	
 	.Contusc .location{
 		width: 50%;
 		text-align:left;
 		background-color:inherit;
 	}
 
-	.Contusc .location h2{
-		text-align: left;
+	.Contusc .location p{
+		margin-left:40px;
 	}
-
 	.Contusc .two-col{
 		align-items: center;
 		width:100%;
@@ -1779,6 +1794,7 @@ a{
 		height: 450px;
 		padding: 0;
 	}
+	
 	/* ==========BLOG POST  =============== */
 	.blog-default{
 		display: flex;
@@ -1812,7 +1828,6 @@ a{
 		text-align:left;
 		color:#0c457d;
 		margin:5px;}
-
 
 }
 
@@ -2217,6 +2232,15 @@ a>img{
 	background-color: #fff;
 }
 
+
+
+
+
+
+
+
+
+
 	/* =====================BLOG PAGE CSS======================= */
 	.container-fluid{
 	margin:0 auto;
@@ -2313,6 +2337,60 @@ a>img{
 		text-align:left;
 		color:#0c457d;
 		margin:5px;}
+}
+
+/* ==========PAGE Contact US  =============== */	
+	
+	.Contusc h2{
+		text-align:center;
+	}
+		.Contusc form{
+		width: 80%;
+		padding:5px;
+	}
+	.Contusc form div{
+		padding:1px;
+	}
+	.Contusc input[type=text], textarea {
+		width: 100%;
+		max-width:300px;
+		padding: 10px;
+		margin: 5px 0 10px 0;
+		display: inline-block;
+		border: 1px solid #0c457d;
+		background: #ffffff;
+	}
+	
+	.Contusc button{
+		background-color: #0c457d;
+		color: white;
+		padding: 16px 16px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 200px;
+	}
+	
+	.Contusc button:hover {
+	background-color: #0288d1;
+	}	
+	
+	
+
+	.Contusc .location p{
+		margin-left:10px;
+	}
+	.Contusc .two-col{
+		align-items: center;
+		width:100%;
+		margin: 0 auto;
+	}
+		
+	.Contusc iframe{
+		width:90%;
+		height: 450px;
+		padding:15px;
+	}
 
 }
 
