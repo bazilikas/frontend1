@@ -617,13 +617,15 @@ a{
 		.columnn img {
 			margin-top: 8px;
 			vertical-align: middle;
+			opacity: 0.90;
+			transition: transform .2s;
 		}
-	
+
 		.columnn img:hover{
-				opacity: 1;
-				cursor: pointer;
-				animation-duration: 0.6s;
-			}
+			transform: scale(1.02);
+			opacity: 1;
+			cursor: pointer;
+		}
 
 
 	
@@ -1670,13 +1672,15 @@ a{
 		.columnn img {
 			margin-top: 8px;
 			vertical-align: middle;
+			opacity: 0.90;
+			transition: transform .2s;
 		}
-	
+
 		.columnn img:hover{
-					opacity: 1;
-					cursor: pointer;
-					animation-duration: 0.6s;
-				}
+			transform: scale(1.02);
+			opacity: 1;
+			cursor: pointer;
+		}
 
 
 
