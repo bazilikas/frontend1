@@ -67,13 +67,7 @@ $name=isset ($_POST ['name'])? $_POST ['name']:'';
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 		<link rel="stylesheet" type="text/css" href="about.html"/>
-		<!-- Remember to include jQuery :) -->
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-
-			<!-- jQuery Modal -->
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-	</head>
+		</head>
 
 		
 <body>
