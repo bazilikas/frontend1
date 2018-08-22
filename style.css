@@ -482,6 +482,58 @@ a{
 	.credit{
 		padding-left: 0.5rem;
 	}
+	
+	
+	
+	
+		/* ==========feedback form=============== */	
+	
+	
+	.feedback{
+		background-color:white;
+		
+		}
+	.feedback h2{
+		text-align:center;
+	}
+	
+	.feedback section{
+		width: 100%;
+		padding:10px;
+	}	
+	
+	.feedback form{
+		width: 100%;
+		margin-left: 40%;
+	}
+	.feedback form div{
+		padding:1px;
+	}
+	.feedback input[type=text],.feedback textarea {
+		width: 100%;
+		max-width:300px;
+		padding: 10px;
+		margin: 5px 0 10px 0;
+		display: inline-block;
+		border: 1px solid #dddddd;
+		background: #ffffff;
+	}
+	
+	.feedback button{
+		background-color: #0c457d;
+		color: white;
+		padding: 16px 16px;
+		margin-left:40px;
+		border: none;
+		cursor: pointer;
+		width: 200px;
+	}
+	
+	.feedback button:hover {
+	background-color: #0288d1;
+	}	
+	
+	
 
 	/* ==========FOOTER=============== */	
 	footer{
@@ -1469,7 +1521,52 @@ a{
 	.credit{
 		padding-left: 0.5rem;
 	}
-
+/* ==========feedback form=============== */	
+	
+	
+	.feedback{
+		background-color:white;
+		
+		}
+	.feedback h2{
+		text-align:center;
+	}
+	
+	.feedback section{
+		width: 90%;
+		padding:10px;
+	}	
+	
+	.feedback form{
+		width: 100%;
+		margin-left: 35%;
+	}
+	.feedback form div{
+		padding:1px;
+	}
+	.feedback input[type=text],.feedback textarea {
+		width: 100%;
+		max-width:300px;
+		padding: 10px;
+		margin: 5px 0 10px 0;
+		display: inline-block;
+		border: 1px solid #dddddd;
+		background: #ffffff;
+	}
+	
+	.feedback button{
+		background-color: #0c457d;
+		color: white;
+		padding: 16px 16px;
+		margin-left:40px;
+		border: none;
+		cursor: pointer;
+		width: 200px;
+	}
+	
+	.feedback button:hover {
+	background-color: #0288d1;
+	}	
 	/* ==========FOOTER=============== */	
 	footer{
 		color: white;
@@ -2467,6 +2564,53 @@ a{
 	.credit{
 		padding-left: 0.5rem;
 	}
+	
+	 /*==========feedback form=============== */	
+	
+	
+	.feedback{
+		background-color:white;
+		
+		}
+	.feedback h2{
+		text-align:center;
+	}
+	
+	.feedback section{
+		width: 100%;
+		padding:10px;
+	}	
+	
+	.feedback form{
+		width: 80%;
+		margin: 10px;;
+	}
+	.feedback form div{
+		padding:1px;
+	}
+	.feedback input[type=text],.feedback textarea {
+		width: 100%;
+		max-width:300px;
+		padding: 10px;
+		margin: 5px 0 10px 0;
+		display: inline-block;
+		border: 1px solid #dddddd;
+		background: #ffffff;
+	}
+	
+	.feedback button{
+		background-color: #0c457d;
+		color: white;
+		padding: 16px 16px;
+		margin-left:25px;
+		border: none;
+		cursor: pointer;
+		width: 200px;
+	}
+	
+	.feedback button:hover {
+	background-color: #0288d1;
+	}	
 
 	/* ==========FOOTER=============== */	
 	footer{
