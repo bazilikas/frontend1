@@ -626,6 +626,7 @@ a{
 		}
 
 
+	
 	/* ===================================Information page============================== */
 
 	.information{
@@ -689,8 +690,13 @@ a{
 	button{
 		width: 100%;
 		padding: 10px;
-		border:1px solid #e1f5fe;
+		border:2px solid #e1f5fe;
 		background-color:white;
+	}
+
+	button:hover{
+		background-color:rgb(170, 223, 255);
+		cursor: pointer;
 	}
 	
 	.panel {
@@ -740,6 +746,8 @@ a{
 		width: 80%;
 		margin: 10px auto;
 		padding: 20px;
+		min-height: 600px;
+		font-size: 20px;
 	}
 
 	.foodcontainer > div{
@@ -750,7 +758,8 @@ a{
 		grid-row:    1 / 2;
 		grid-column: 1 / 2;
 		text-align: justify;
-		padding: 50px 30px;
+		padding: 100px 30px;
+		
 	}
 
 	.two{
@@ -772,7 +781,7 @@ a{
 	.four{
 		grid-row:    2 / 3;
 		grid-column: 2 / 3;
-		padding: 50px 30px;
+		padding: 100px 30px;
 		text-align: justify;
 	}
 	/* ==========Location=============== */	
@@ -1671,7 +1680,7 @@ a{
 	}
 
 	.table-one{
-		width: 80%;
+		width: 90%;
 		margin: 0 auto;
 		text-align: left;
 		border-collapse: collapse;
@@ -1715,7 +1724,7 @@ a{
 	.faqdrop{
 		text-align: center;
 		display: block;
-		width: 80%;
+		width: 90%;
 		margin: 10px auto;
 		padding: 20px;
 	}
@@ -1723,8 +1732,13 @@ a{
 	button{
 		width: 100%;
 		padding: 10px;
-		border:1px solid #e1f5fe;
+		border:2px solid #e1f5fe;
 		background-color:white;
+	}
+
+	button:hover{
+		background-color:rgb(170, 223, 255);
+		cursor: pointer;
 	}
 
 	.panel {
@@ -1771,14 +1785,14 @@ a{
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 1px;
 		color: white;
-		width: 80%;
+		width: 95%;
 		margin: 10px auto;
 		padding: 20px;
 	}
 
 	.foodcontainer > div{
 		background-color:#0288d1;
-		}
+	}
 
 	.one{
 		grid-row:    1 / 2;
@@ -2701,18 +2715,34 @@ a{
 }
 
 
-/* ===============================PROGRAM PAGE================================== */
+/* ===============================PROGRAM and Information PAGE================================== */
 	
+	
+	.programkartu{
+		display: flex;
+		justify-content: center
+	}
+
+	.programkartu .table-one{
+		min-width: 100%;
+	}
+
+	.programkartu img{
+		max-width: 20%;
+		align-self: center;
+		
+	}
+
 	.information{
 		background-color:white; 	text-align: center;
-		padding:10px;
 	}
+
 	.sektorius{
 		width:100%;
 	}
 
 	.table-one{
-		width: 80%;
+		width: 95%;
 		margin: 0 auto;
 		text-align: left;
 		border-collapse: collapse;
@@ -2733,27 +2763,125 @@ a{
 	tr:nth-child(even) {
 		background-color: #dddddd;
 	}
-	
-	
-	
-	
-	.programkartu{
-		display: flex;
-		justify-content: center
+
+	a.reg-button {
+		display: block;
+		text-align:center;
+		background-color:#0c457d;
+		color: white;
+		padding: 10px;
+		margin: 10px auto;
+		font-weight: bold;	
+		text-decoration: none;
+		width: 200px;
 	}
 
-	.programkartu .table-one{
-		min-width: 100%;
+	/* ==========FAQ=============== */
+	.faq{
+		background-color:#e1f5fe;  
+		text-align: center;
+		padding:10px;
 	}
 
-	.programkartu img{
-		max-width: 20%;
-		align-self: center;
+	.faqdrop{
+		text-align: center;
+		display: block;
+		width: 95%;
+		margin: 10px auto;
+		padding: 20px;
+	}
+
+	button{
+		width: 100%;
+		padding: 10px;
+		border:2px solid #e1f5fe;
+		background-color:white;
+	}
+
+	button:hover{
+		background-color:rgb(170, 223, 255);
+		cursor: pointer;
+	}
+
+
+	.panel {
+		padding: 0 18px;
+		background-color: white;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+	}
+
+	.faqdrop ul{
+		text-align: left;
+		list-style:none;
+		padding-left:20px;
+		padding-right:20px;
+	}
+
+	.faqdrop li {
+		margin-bottom:15px;
+	}
+		
+	.accordion:after {
+		content: '\02795'; /* Unicode character for "plus" sign (+) */
+		font-size: 13px;
+		color: #0c457d;
+		float: right;
+		margin-left: 5px;
+	}
+		
+	.active:after {
+		content: "\2796"; /* Unicode character for "minus" sign (-) */
+	}
+
+	/*==============FOOD==============*/
+	.food{
+		background-color: #dddddd;
+		text-align:center;
+		padding:10px;
+	}
+
+	.foodcontainer{
+		display:flex;
+		flex-wrap: wrap;
+		color: white;
+		width: 98%;
+		margin: 10px auto;
 		
 	}
 
+	.foodcontainer > div{
+		background-color:#0288d1;
+		}
 
+	.one{
+		width: 100%;
+		text-align: justify;
+		padding: 50px 10px;
+	}
 
+	.two{
+		width: 100%;
+		height: 300px;
+		background-image: url(http://www.surfcamppeaksnswells.com/pns/wp-content/uploads/2015/07/food1.jpg);
+		background-position: center;
+		background-size: cover;	
+	}
+
+	.three{
+		width: 100%;
+		height: 300px;
+		background-image: url(https://img.purch.com/h/1000/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzA3My80MzYvb3JpZ2luYWwva2lkcy1waXp6YS0xNTAxMTkuanBn);
+		background-position: center;
+		background-size: cover;
+	}
+
+	.four{
+		width: 100%;
+		text-align: justify;
+		padding: 50px 10px;
+	}
 
 	/* =====================BLOG PAGE CSS======================= */
 	.container-fluid{
