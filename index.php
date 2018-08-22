@@ -5,7 +5,7 @@ $name=isset ($_POST ['name'])? $_POST ['name']:'';
 	$success = 	isset($_GET['success']) ? $_GET['success'] : '';
 	$error = array("name" => "","email" => "", "feedback" => "","sum" => "","database" => "");
 	if($_POST){
-		if (strlen($name) == 0 || strlen($name) >255 || strlen($email) == 0 || strlen($email) >255 || strlen($feedback) == 0 || $sum!=2 || !filter_var($email, FILTER_VALIDATE_EMAIL))
+		if (strlen($name) == 0 || strlen($name) >255 || strlen($email) == 0 || strlen($email) >255 || strlen($feedback) == 0 || $sum!=2 || !filter_var($email, FILTER_VALIDATE_EMAIL)|| strlen($empty)>0)
 		{
 			if  (strlen($name) == 0	){
 			$error['name'] = 'Insert a name';
@@ -29,7 +29,10 @@ $name=isset ($_POST ['name'])? $_POST ['name']:'';
 			if ($sum !=2) {
 				$error['sum'] = 'Inccorect';
 							}
-		}
+			if (strlen($empty)>0) {
+				header("Location:index1.php");
+							}			
+}
 		else {
 		
 			$conn = new mysqli ('localhost', 'root', 'root', 'group_project'); 
@@ -314,6 +317,7 @@ $name=isset ($_POST ['name'])? $_POST ['name']:'';
 <?php echo $error['feedback']; ?><br><br>
 		1+1=: <br><input type="number" name ="sum" placeholder = "Select sum" /> 
 <?php echo $error['sum']; ?> <br><br>
+		<input type="text" name ="empty" value=""/><br><br>
 		<button type="submit" class="leavefeedbackbtn">Save feedback</button>		
 		</form>
 	</section>
