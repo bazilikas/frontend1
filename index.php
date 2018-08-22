@@ -1,3 +1,4 @@
+<?php
 $name=isset ($_POST ['name'])? $_POST ['name']:''; 
 	$email=isset ($_POST ['email'])? $_POST ['email']:'';
 	$feedback=isset ($_POST ['feedback'])? $_POST ['feedback']:'';
@@ -82,7 +83,7 @@ $name=isset ($_POST ['name'])? $_POST ['name']:'';
 		
 			<img src="http://www.edumsia.my/sites/default/files/styles/inner_cover/public/article/cover/Logo_C%40S_800px.png?itok=vz1K2YG0" alt="Logo"/>
 <nav class="navbar topnav" id="myTopnav">
-				<a href="#home" onclick="location.href='Group project.html'">Home</a>
+				<a href="#home" onclick="location.href='index.php'">Home</a>
 				<div class="dropdown">
 					 <button class="dropbtn" onclick="location.href='about.html'">About</button>
 						<div class="dropdown-content">
