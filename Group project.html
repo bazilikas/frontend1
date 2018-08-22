@@ -240,6 +240,24 @@
 			</section>
 		</div>
 	</div>
+		   
+ <!--=============Feedback form==============-->	
+	
+div class="feedback">
+	<section>
+	<h2>LEAVE YOUR FEEDBACKS</h2> 
+	
+	<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" />
+		Your Name:<br><input type="text" name ="name" value="<?php echo $name;?>"/>
+<?php echo $error['name']; ?><br><br>
+		Your Email: <br><input type="text" name ="email" value="<?php echo $email; ?>"/>
+<?php echo $error['email']; ?> <br><br>
+		Your Feedback:<br><textarea name ="feedback" value="<?php echo $feedback; ?>"/>
+<?php echo $error['feedback']; ?></textarea><br><br>
+		<button type="submit" class="leavefeedbackbtn">Save feedback</button>		
+		</form>
+	</section>
+</div>
 <!--=============FOOTER==============-->
 
 	<footer>
