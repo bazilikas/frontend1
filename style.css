@@ -214,6 +214,7 @@ a{
 		padding: 10px;
 		font-size: 20px;
 		color: #0c457d;
+		text-align: justify;
 	}
 	
 	
@@ -2404,7 +2405,7 @@ a{
 .about-home{
 	padding: 5px;
 	background-color:  #e1f5fe; /*#F37000 oranzine*/
-	text-align: justify;
+	
 }
 
  .faqdrop p{
@@ -2413,6 +2414,7 @@ a{
 	padding: 10px;
 	font-size: 15px;
 	color: #0c457d;
+	text-align: justify;
 }
 
 
