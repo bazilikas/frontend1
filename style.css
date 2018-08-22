@@ -3000,6 +3000,49 @@ a{
 		padding: 50px 10px;
 	}
 
+	
+	
+	/* =====================SPONSORS======================= */
+
+
+	.sponsors-section{
+		padding: 25px 50px;
+		justify-content: center;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.boxed-section {
+		display: flex;
+		flex-flow: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-basis: auto;
+		position: relative;
+		height: auto;
+		padding: 50px 50px;
+	}
+
+	.boxed-section>* {
+		margin: 0px 0px 40px 0px;
+	}
+
+	.boxed-section a div {
+		width: 200px;
+		height: 120px;
+	}
+
+	.highlight-box>div {
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 5px;
+		box-shadow: 4px 4px 10px rgba(146,137,224,.4);
+		border: 1px solid rgba(146,137,224,.1);
+	}
+	
+	
 	/* =====================BLOG PAGE CSS======================= */
 	.container-fluid{
 	margin:0 auto;
