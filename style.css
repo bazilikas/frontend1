@@ -1,18 +1,4 @@
 /*=====TODO=====*/
-/* 
-1.Pasidaryt meniu kad sumažinus į tablet ar mobile normalus būtų 
-2.For kids for teacher for voluntiers sekcijoj jei truputi sumazini
- langa tai sokineja registracijos tie blokeliai 
-3. labiau į galą padaryt visokais animacijas/transitions on hover ir pan
-4. Kolkas viską sumečiau į @media only screen and (min-width: 1201px) tai
- reiks kitus peržiūrėt kad ant tablet ir mobile norma atrodytų)
-5. 
-6. 
-7. 
-8.Pildykit kas šauna į galvą dėl tobulinimų, kiek spėsim tiek sufixinsim
-9.  
- */
-
  a{
 	color: inherit;
 	text-decoration: none;
@@ -490,10 +476,7 @@ a{
 		padding-left: 0.5rem;
 	}
 	
-	
-	
-	
-		/* ==========feedback form=============== */	
+	/* ==========Feedback form=============== */	
 	
 	
 	.feedback{
@@ -526,6 +509,9 @@ a{
 		background: #ffffff;
 	}
 	
+	.feedback input[name="empty"]{
+		display: none;
+	}
 	.feedback button{
 		background-color: #0c457d;
 		color: white;
@@ -1069,8 +1055,7 @@ a{
 }
 
 /* ========================================TABLET========================================== */
-/* ========================================TABLET========================================== */
-/* ========================================TABLET========================================== */
+
  
 
 @media only screen and (min-width: 601px) and (max-width: 1200px){
@@ -1543,7 +1528,7 @@ a{
 	.credit{
 		padding-left: 0.5rem;
 	}
-/* ==========feedback form=============== */	
+/* ==========Feedback form=============== */	
 	
 	
 	.feedback{
@@ -1576,6 +1561,9 @@ a{
 		background: #ffffff;
 	}
 	
+	.feedback input[name="empty"]{
+		display: none;
+	}
 	.feedback button{
 		background-color: #0c457d;
 		color: white;
@@ -2166,8 +2154,6 @@ a{
 
 
 /*============================================MOBILE========================================= */
-/*============================================MOBILE========================================= */
-/*============================================MOBILE========================================= */
 
 @media only screen and (max-width: 600px){
 
@@ -2696,7 +2682,7 @@ a{
 		padding-left: 0.5rem;
 	}
 	
-	 /*==========feedback form=============== */	
+	 /*==========Feedback form=============== */	
 	
 	
 	.feedback{
@@ -2729,6 +2715,9 @@ a{
 		background: #ffffff;
 	}
 	
+	.feedback input[name="empty"]{
+		display: none;
+	}
 	.feedback button{
 		background-color: #0c457d;
 		color: white;
