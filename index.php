@@ -1,22 +1,36 @@
-<?php
-	$name=isset ($_POST ['name'])? $_POST ['name']:''; 
+$name=isset ($_POST ['name'])? $_POST ['name']:''; 
 	$email=isset ($_POST ['email'])? $_POST ['email']:'';
 	$feedback=isset ($_POST ['feedback'])? $_POST ['feedback']:'';
+	$sum=isset ($_POST ['sum'])? $_POST ['sum']:'';
 	$success = 	isset($_GET['success']) ? $_GET['success'] : '';
-	$error = array("name" => "","email" => "", "feedback" => "","database" => "");
+	$error = array("name" => "","email" => "", "feedback" => "","sum" => "","database" => "");
 	if($_POST){
-		if(strlen($name) == 0 || strlen($email) == 0 || strlen($feedback) == 0){
-			if(strlen($name) == 0){
-				$error['name'] = 'Error';
+		if (strlen($name) == 0 || strlen($name) >255 || strlen($email) == 0 || strlen($email) >255 || strlen($feedback) == 0 || $sum!=2 || !filter_var($email, FILTER_VALIDATE_EMAIL))
+		{
+			if  (strlen($name) == 0	){
+			$error['name'] = 'Insert a name';
 			}
-			if(strlen($email) ==0 ){
-				$error['email'] = 'Error';
+			if (strlen($name) >255)	{
+			$error['name'] = 'Insert shorter name';
 			}
-			if(strlen($feedback) == 0){
-				$error['feedback'] = 'Error';
+			if (strlen($email) == 0 ){
+			$error['email'] = 'Insert email';
 			}
-		
-		}else {
+			if (strlen($email) >255 ){
+			$error['email'] = 'Insert shorter email';
+			}
+			
+			if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+			$error['email'] = 'In email isnt @ or . symbol';
+			}
+			if (strlen($feedback) == 0){
+				$error['feedback'] = 'Insert feedback';
+			}
+			if ($sum !=2) {
+				$error['sum'] = 'Inccorect';
+							}
+		}
+		else {
 		
 			$conn = new mysqli ('localhost', 'root', 'root', 'group_project'); 
 			if ($conn->connect_error) {
@@ -25,16 +39,17 @@
 			$name = $conn->real_escape_string($name);
 			$email = $conn->real_escape_string($email);
 			$feedback = $conn->real_escape_string($feedback);
+			$sum = $conn->real_escape_string($sum);
 			$saved = $conn->query ("INSERT INTO feedback (Name, Email, Feedback) 
-			VALUES  ('$name','$email','$feedback')");
+			VALUES  ('$name','$email','$feedback') ");
 			if($saved){
 				header('Location: ' . $_SERVER['PHP_SELF'] . '?success=OK');
 							}else{
 				$error['database'] = "Error when saving";
 			}
 			}
+	
 	}
-
 	if(strlen($success) == 0) { 
 ?>
 <!DOCTYPE html>
@@ -289,15 +304,16 @@
 	
 <div class="feedback">
 	<section>
-	<h2>LEAVE YOUR FEEDBACKS</h2> 
-	
-	<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" />
+		<h2>LEAVE YOUR FEEDBACKS</h2> 
+		<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" />
 		Your Name:<br><input type="text" name ="name" value="<?php echo $name;?>"/>
 <?php echo $error['name']; ?><br><br>
 		Your Email: <br><input type="text" name ="email" value="<?php echo $email; ?>"/>
 <?php echo $error['email']; ?> <br><br>
-		Your Feedback:<br><textarea name ="feedback" value="<?php echo $feedback; ?>"/>
-<?php echo $error['feedback']; ?></textarea><br><br>
+		Your Feedback:<br><textarea name="feedback"><?php echo $feedback; ?></textarea>
+<?php echo $error['feedback']; ?><br><br>
+		1+1=: <br><input type="number" name ="sum" placeholder = "Select sum" /> 
+<?php echo $error['sum']; ?> <br><br>
 		<button type="submit" class="leavefeedbackbtn">Save feedback</button>		
 		</form>
 	</section>
@@ -368,6 +384,6 @@
 </html>
 <?php
 	}else {
-		header("Location:Group project.php");
+		header("Location:index.php");
 }
 ?> 
