@@ -15,7 +15,8 @@
 
 	<header >
 		<div class="header-wrapper">
-					<img src="http://www.edumsia.my/sites/default/files/styles/inner_cover/public/article/cover/Logo_C%40S_800px.png?itok=vz1K2YG0" alt="Logo"/>
+		
+			<img src="http://www.edumsia.my/sites/default/files/styles/inner_cover/public/article/cover/Logo_C%40S_800px.png?itok=vz1K2YG0" alt="Logo"/>
 <nav class="navbar topnav" id="myTopnav">
 				<a href="#home" onclick="location.href='Group project.html'">Home</a>
 				<div class="dropdown">
@@ -37,7 +38,7 @@
 							<a href="program.html#areas">Educational & Activity areas</a>
 						</div>
 				</div>	
-				<a href ="registration.html">Registration</a>
+				<a href ="#registration"  id="regmenubtn" >Registration</a>
 				<div class="dropdown">
 					<button class="dropbtn" onclick="location.href='information.html'">Information</button>
 						<div class="dropdown-content">
@@ -194,6 +195,35 @@
 </div>
    <script src="scripts/slider.js"></script>
    <script src="scripts/collapse.js"></script>
+	<script>
+			function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "topnav") {
+					x.className += " responsive";
+				} else {
+					x.className = "topnav";
+				}
+			}
+
+		var modal = document.getElementById('registration');
+		var btn1 = document.getElementById("regbtn");
+		var btn2 = document.getElementById("regmenubtn");
+		var span = document.getElementsByClassName("close")[0];
+		btn1.onclick = function() {
+			modal.style.display = "block";
+			}
+		btn2.onclick = function() {
+			modal.style.display = "block";
+			}
+		span.onclick = function() {
+			modal.style.display = "none";
+			}
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+				}
+		}	
+	</script>
 	
 </body>
 		
