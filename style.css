@@ -537,7 +537,23 @@ a{
 	}
 
 
-	/* ===============================PROGRAM PAGE================================== */
+/* ===============================PROGRAM PAGE================================== */
+		.programkartu{
+			display: flex;
+			flex-wrap: warp;
+			justify-content: center
+		}
+		.programkartu .table-one{
+			min-width: 100%;
+		}
+	
+		.programkartu img{
+			max-width: 20%;
+			align-self: center;
+		}
+	
+
+	
 		.roww {
 			display: -ms-flexbox; /* IE10 */
 			display: flex;
@@ -548,8 +564,6 @@ a{
 				
 		/* Create four equal columns that sits next to each other */
 		.columnn {
-			-ms-flex: 25%; /* IE10 */
-			flex: 25%;
 			max-width: 25%;
 			padding: 0 4px;
 			margin: 0 auto;
@@ -558,8 +572,6 @@ a{
 			margin-top: 8px;
 			vertical-align: middle;
 		}
-
-
 
 
 	/* ===================================Information page============================== */
@@ -1510,6 +1522,24 @@ a{
 
 
 	/* ===============================PROGRAM PAGE================================== */
+	.programkartu{
+		display: flex;
+		
+		justify-content: center
+	}
+
+	.programkartu .table-one{
+		min-width: 100%;
+	}
+
+	.programkartu img{
+		max-width: 20%;
+    	align-self: center;
+	}
+
+
+	/*============== gallery=========== */
+	
 		.roww {
 			display: -ms-flexbox; /* IE10 */
 			display: flex;
@@ -1520,9 +1550,7 @@ a{
 				
 		/* Create four equal columns that sits next to each other */
 		.columnn {
-			-ms-flex: 25%; /* IE10 */
-			flex: 25%;
-			max-width: 25%;
+			max-width: 50%;
 			padding: 0 4px;
 			margin: 0 auto;
 		}
@@ -1530,6 +1558,7 @@ a{
 			margin-top: 8px;
 			vertical-align: middle;
 		}
+
 
 
 
@@ -2528,13 +2557,56 @@ a{
 }
 
 
+/* ===============================PROGRAM PAGE================================== */
+	
+	.information{
+		background-color:white; 	text-align: center;
+		padding:10px;
+	}
+	.sektorius{
+		width:100%;
+	}
 
+	.table-one{
+		width: 80%;
+		margin: 0 auto;
+		text-align: left;
+		border-collapse: collapse;
+		background-color:white;
+	}
 
+	th {text-align:center;
+		padding: 5px;
+		background-color:#0c457d;
+		color: white;
+	}
 
+	td, th {
+		border: 1px solid #dddddd;
+		padding: 5px 5px 5px 35px;
+	}
 
+	tr:nth-child(even) {
+		background-color: #dddddd;
+	}
+	
+	
+	
+	
+	.programkartu{
+		display: flex;
+		justify-content: center
+	}
 
+	.programkartu .table-one{
+		min-width: 100%;
+	}
 
-
+	.programkartu img{
+		max-width: 20%;
+		align-self: center;
+		
+	}
 
 
 
