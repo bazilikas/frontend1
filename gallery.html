@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .columnn {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.columnn {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modalgal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-contentgal {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlidesgal {
+  display: none;
+  background-color: black;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  }
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-containergal {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+<body>
+
+<h2 style="text-align:center">Lightbox</h2>
+
+<div class="row">
+  <div class="columnn">
+	  <img src="./images/galery/gal1.jpg" style="width:100%" onclick="openModal();currentSlide(1)"/>
+	  <img src="./images/galery/gal3.jpg" style="width:100%" onclick="openModal();currentSlide(2)"/>
+	  <img src="./images/galery/gal4.jpg" style="width:100%" onclick="openModal();currentSlide(3)"/>
+	  <img src="./images/galery/gal5.jpg" style="width:100%" onclick="openModal();currentSlide(4)"/>
+	  <img src="./images/galery/gal6.jpg" style="width:100%" onclick="openModal();currentSlide(5)"/>
+	  <img src="./images/galery/gal7.jpg" style="width:100%" onclick="openModal();currentSlide(6)"/>
+	</div>
+	<div class="columnn">
+	  <img src="./images/galery/gal8.png" style="width:100%" onclick="openModal();currentSlide(7)"/>
+	  <img src="./images/galery/gal9.png" style="width:100%" onclick="openModal();currentSlide(8)"/>
+	  <img src="./images/galery/gal10.jpg" style="width:100%" onclick="openModal();currentSlide(9)"/>
+	  <img src="./images/galery/gal11.png" style="width:100%" onclick="openModal();currentSlide(10)"/>
+	  <img src="./images/galery/gal12.jpg" style="width:100%" onclick="openModal();currentSlide(11)"/>
+	  <img src="./images/galery/gal13.jpg" style="width:100%" onclick="openModal();currentSlide(12)"/>
+	</div>  
+	<div class="columnn">
+	  <img src="./images/galery/gal14.jpg" style="width:100%" onclick="openModal();currentSlide(13)"/>
+	  <img src="./images/galery/gal15.jpg" style="width:100%" onclick="openModal();currentSlide(14)"/>
+	  <img src="./images/galery/gal16.png" style="width:100%" onclick="openModal();currentSlide(15)"/>
+	  <img src="./images/galery/gal17.jpg" style="width:100%" onclick="openModal();currentSlide(16)"/>
+	  <img src="./images/galery/gal18.jpg" style="width:100%" onclick="openModal();currentSlide(17)"/>
+	  <img src="./images/galery/gal20.jpg" style="width:100%" onclick="openModal();currentSlide(18)"/>
+	</div>
+	<div class="columnn">
+	  <img src="./images/galery/gal21.jpg" style="width:100%" onclick="openModal();currentSlide(19)"/>
+	  <img src="./images/galery/gal22.jpg" style="width:100%" onclick="openModal();currentSlide(20)"/>
+	  <img src="./images/galery/gal23.jpg" style="width:100%" onclick="openModal();currentSlide(21)"/>
+	  <img src="./images/galery/gal24.jpg" style="width:100%" onclick="openModal();currentSlide(22)"/>
+	  <img src="./images/galery/gal25.jpg" style="width:100%" onclick="openModal();currentSlide(23)"/>
+	  <img src="./images/galery/gal26.jpg" style="width:100%" onclick="openModal();currentSlide(24)"/>
+	</div>
+  </div>
+</div>
+
+<div id="myModal" class="modalgal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-contentgal">
+
+    <div class="mySlidesgal">
+      <div class="numbertext">1 / 26</div>
+      <img src="./images/galery/gal1.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+
+    <div class="mySlidesgal">
+      <div class="numbertext">2 / 26</div>
+      <img src="./images/galery/gal2.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+
+    <div class="mySlidesgal">
+      <div class="numbertext">3 / 26</div>
+      <img src="./images/galery/gal3.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">4 / 26</div>
+      <img src="./images/galery/gal4.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">5 / 26</div>
+      <img src="./images/galery/gal5.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">6 / 26</div>
+      <img src="./images/galery/gal6.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">7 / 26</div>
+      <img src="./images/galery/gal7.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">8 / 26</div>
+      <img src="./images/galery/gal8.png" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">9 / 26</div>
+      <img src="./images/galery/gal9.png" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">10 / 26</div>
+      <img src="./images/galery/gal10.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">11 / 26</div>
+      <img src="./images/galery/gal11.png" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">12 / 26</div>
+      <img src="./images/galery/gal12.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">13 / 26</div>
+      <img src="./images/galery/gal3.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">14 / 26</div>
+      <img src="./images/galery/gal4.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">15 / 26</div>
+      <img src="./images/galery/gal5.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">16 / 26</div>
+      <img src="./images/galery/gal6.png" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">17 / 26</div>
+      <img src="./images/galery/gal7.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">18 / 26</div>
+      <img src="./images/galery/gal8.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">19 / 26</div>
+      <img src="./images/galery/ga19.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">20 / 26</div>
+      <img src="./images/galery/ga20.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">21 / 26</div>
+      <img src="./images/galery/ga21.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">22 / 26</div>
+      <img src="./images/galery/ga22.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">23 / 26</div>
+      <img src="./images/galery/ga23.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">24 / 26</div>
+      <img src="./images/galery/ga24.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">25 / 26</div>
+      <img src="./images/galery/ga25.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    <div class="mySlidesgal">
+      <div class="numbertext">26 / 26</div>
+      <img src="./images/galery/ga26.jpg" style="height: 700px; display: block; margin: 0 auto;">
+    </div>
+    
+    
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-containergal">
+      <p id="captiongal"></p>
+    </div>
+
+
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Code">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Academy">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Frontend">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal4.jpg" style="width:100%" onclick="currentSlide(4)" alt="And">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Backend">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Group">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Project">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal8.png" style="width:100%" onclick="currentSlide(8)" alt="Testing">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal9.png" style="width:100%" onclick="currentSlide(9)" alt="New">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal10.jpg" style="width:100%" onclick="currentSlide(10)" alt="Skills">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal11.png" style="width:100%" onclick="currentSlide(11)" alt="In">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal12.jpg" style="width:100%" onclick="currentSlide(12)" alt="WEB">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal13.jpg" style="width:100%" onclick="currentSlide(13)" alt="Northern Lights">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal14.jpg" style="width:100%" onclick="currentSlide(14)" alt="Northern Lights">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal15.jpg" style="width:100%" onclick="currentSlide(15)" alt="Northern Lights">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal16.png" style="width:100%" onclick="currentSlide(16)" alt="Northern Lights">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal17.jpg" style="width:100%" onclick="currentSlide(17)" alt="Northern Lights">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal18.jpg" style="width:100%" onclick="currentSlide(18)" alt="Northern Lights">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal19.jpg" style="width:100%" onclick="currentSlide(19)" alt="Northern Lights">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal20.jpg" style="width:100%" onclick="currentSlide(20)" alt="Northern Lights">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal21.jpg" style="width:100%" onclick="currentSlide(21)" alt="Northern Lights">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal22.jpg" style="width:100%" onclick="currentSlide(22)" alt="Northern Lights">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal23.jpg" style="width:100%" onclick="currentSlide(23)" alt="Northern Lights">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal24.jpg" style="width:100%" onclick="currentSlide(24)" alt="Northern Lights">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal25.jpg" style="width:100%" onclick="currentSlide(25)" alt="Northern Lights">
+    </div>
+    <div class="columnn">
+      <img class="demo cursor" src="./images/galery/gal26.jpg" style="width:100%" onclick="currentSlide(26)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlidesgal");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("captiongal");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
