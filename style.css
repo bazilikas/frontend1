@@ -890,6 +890,17 @@ a{
 		height: 120px;
 	}
 
+	.boxed-section > .highlight-box {
+		opacity: 0.90;
+		transition: transform .3s;
+	}
+
+	.boxed-section .highlight-box:hover{
+		transform: scale(1.1);
+		opacity: 1;
+		cursor: pointer;
+	}	
+	
 	.highlight-box>div {
 		background-color: #fff;
 		display: flex;
@@ -1988,6 +1999,17 @@ a{
 		height: 120px;
 	}
 
+	.boxed-section > .highlight-box {
+		opacity: 0.90;
+		transition: transform .3s;
+	}
+
+	.boxed-section .highlight-box:hover{
+		transform: scale(1.1);
+		opacity: 1;
+		cursor: pointer;
+	}
+	
 	.highlight-box>div {
 		background-color: #fff;
 		display: flex;
@@ -3020,6 +3042,17 @@ a{
 	.boxed-section a div {
 		width: 200px;
 		height: 120px;
+	}
+	
+	.boxed-section > .highlight-box {
+		opacity: 0.90;
+		transition: transform .3s;
+	}
+
+	.boxed-section .highlight-box:hover{
+		transform: scale(1.1);
+		opacity: 1;
+		cursor: pointer;
 	}
 
 	.highlight-box>div {
