@@ -11,7 +11,7 @@
 		body {
 			font-family: 'Raleway', sans-serif;
 			font-size: 12pt;
-			color: black;.column
+			color: black;
 		}
 	header{
 			min-width:100%;
@@ -588,10 +588,11 @@ a{
 			flex-wrap: warp;
 			justify-content: center
 		}
-		.programkartu .
+		
+		/* .programkartu .
 	-one{
 			min-width: 100%;
-		}
+		} */
 	
 		.programkartu img{
 			max-width: 20%;
@@ -923,9 +924,9 @@ a{
 		text-decoration: none;
 		text-align:center;
 		padding:10px;
-		
 					
 	}
+
 	.sectionb a:hover{
 		text-decoration: none;	
 		color: #0288d1;
@@ -966,7 +967,7 @@ a{
 		flex-wrap: wrap;
 		}
 	.Contusc h2{
-		text-align=center;
+		text-align:center;
 	}
 	
 	.Contusc div{
@@ -1682,10 +1683,6 @@ a{
 			cursor: pointer;
 		}
 
-
-
-
-
 	/* ===================================Information page============================== */
 
 	.information{
@@ -1917,7 +1914,7 @@ a{
 
 		
 	/* ========================================REGISTRATION=============================== */	
-	.registration{
+	/* .registration{
 		background-color: #dddddd;
 		padding:10px;
 		text-align:center;	
@@ -1963,7 +1960,7 @@ a{
 	.registerbtn:hover {
 	background-color: #0288d1;
 	}	
-		
+		 */
 	/* =======================================SPONSORS==================================== */
 
 	.sponsors-section{
@@ -2042,7 +2039,7 @@ a{
 		background-color:  #f1f1f1; 
 		
 	}
-.card p {
+	.card p {
 		padding:15px;
 	}
 	.card__image{
@@ -2071,7 +2068,7 @@ a{
 		flex-wrap: wrap;
 		}
 	.Contusc h2{
-		text-align=center;
+		text-align:center;
 	}
 	
 	.Contusc div{
@@ -2167,7 +2164,6 @@ a{
 		margin:5px;}
 
 }
-
 
 /*============================================MOBILE========================================= */
 
@@ -2399,8 +2395,6 @@ a{
 	}
 
 
-
-
 /* =====================HOME PAGE====================== */
 /* ==========ABOUT=============== */
 
@@ -2418,7 +2412,6 @@ a{
 	color: #0c457d;
 	text-align: justify;
 }
-
 
 
 /* ==========KIDS TEACHERS VOLUNTIEERS=============== */
@@ -2483,13 +2476,13 @@ a{
 		position: fixed; /* Stay in place */
 		z-index: 1; /* Sit on top */
 		padding-top: 50px; /* Location of the box */
-	   padding-left:30%;
+		padding-left:30%;
 		top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 	}
 
 	.modal-content {
@@ -2758,11 +2751,6 @@ a{
 		margin: 0 auto;
 	}
 
-	.three-columns{
-
-
-	}
-
 	.social{
 		display: flex;
 		align-items: center;
@@ -2798,8 +2786,6 @@ a{
 	.goup:hover{
 		background-color: #fff;
 	}
-
-	
 	
 	
 	
@@ -3005,8 +2991,7 @@ a{
 		padding: 50px 10px;
 	}
 
-	
-	
+		
 	/* =====================SPONSORS======================= */
 
 
@@ -3204,8 +3189,6 @@ a{
 	background-color: #0288d1;
 	}	
 	
-	
-
 	.Contusc .location p{
 		margin-left:10px;
 	}
@@ -3221,7 +3204,7 @@ a{
 		padding:15px;
 	}
 
-}
+
 
 
 
